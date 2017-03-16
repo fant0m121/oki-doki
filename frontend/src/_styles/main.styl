@@ -4,6 +4,7 @@
 // Import Modules
 @import '../_modules/link/link';
 @import '_variable';
+@import 'modules\fonts';
 @import 'modules\button';
 @import 'modules\steps-vertical';
 @import 'modules\form';
@@ -21,10 +22,6 @@
 init($breakpoints, $columns)
 // Box sizing partial styles
 // Apply a natural box layout model to all elements
-@font-face
-    font-family 'Panton'
-    font-style normal
-    src url('/fonts/panton/Panton.otf')
 
 *,
 *:before,
@@ -45,6 +42,7 @@ init($breakpoints, $columns)
     line-height 16px
     color $color-trolleygrey
     justify-content space-between
+    text-transform uppercase
 
 .ui-header__menu
     background-color $color-isabelline
