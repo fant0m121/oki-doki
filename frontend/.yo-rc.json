@@ -1,0 +1,12 @@
+{
+  "generator-yeogurt": {
+    "config": {
+      "projectName": "oki-doki",
+      "htmlOption": "jade",
+      "jsPreprocessor": "none",
+      "cssOption": "stylus",
+      "testFramework": "none"
+    },
+    "version": "1.5.3"
+  }
+}

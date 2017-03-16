@@ -1,0 +1,66 @@
+// Normalize Styles
+@import '../../node_modules/normalize.css/normalize.css';
+
+// Import Modules
+@import '../_modules/link/link';
+@import '_variable';
+@import 'modules\button';
+@import 'modules\steps-vertical';
+@import 'modules\form';
+
+@import '../../node_modules/flexbox-grid-stylus/src/mixins/helpers'
+@import '../../node_modules/flexbox-grid-stylus/src/mixins/grid-framework'
+@import '../../node_modules/flexbox-grid-stylus/src/mixins/bem'
+
+// Components
+@import '../../node_modules/flexbox-grid-stylus/src/components/col'
+@import '../../node_modules/flexbox-grid-stylus/src/components/grid'
+@import '../../node_modules/flexbox-grid-stylus/src/components/row'
+@import '../../node_modules/flexbox-grid-stylus/src/components/text'
+
+init($breakpoints, $columns)
+// Box sizing partial styles
+// Apply a natural box layout model to all elements
+@font-face
+    font-family 'Panton'
+    font-style normal
+    src url('/fonts/panton/Panton.otf')
+
+*,
+*:before,
+*:after
+    box-sizing border-box
+    outline 1px dashed green
+
+.ui-header__content
+    background-color $color-white
+
+.ui-restriction
+    max-width 1530px
+    margin 0 auto
+
+.ui-header__info
+    font-family 'Scada'
+    font-size 12px
+    line-height 16px
+    color $color-trolleygrey
+    justify-content space-between
+
+.ui-header__menu
+    background-color $color-isabelline
+
+.ui-header__logo
+    cursor pointer
+
+.ui-address
+    display flex
+    align-items center
+
+    img
+        padding-right 13px
+
+.ui-phone
+    font-family 'Panton'
+    font-size 20px
+    line-height 32px
+    text-transform uppercase

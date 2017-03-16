@@ -1,0 +1,108 @@
+.ui-button
+    outline 0
+    background rgba(255, 255, 255, 0)
+    border 0
+    color $color-default
+    font-weight lighter
+    font-family 'Rubik', sans-serif
+    text-decoration none
+    cursor pointer
+    transition background-color .2s ease, color .2s ease
+
+    &--size-lg
+        font-size 14px
+        padding 14px 40px
+        line-height 32px
+        border 1px solid
+        border-radius 3px
+
+    &--size-md
+        font-size 20px
+        font-family 'Panton'
+        padding 16px 34px
+        border 1px solid
+
+    &--size-xs
+        font-size 14px
+        padding 7px 18px
+        border-radius 3px
+        line-height 32px
+        color $color-buttonattach
+        background-image -moz-linear-gradient( 90deg, rgb(221,229,238) 0%, rgb(221,229,238) 53%, rgb(255,255,255) 100%)
+        background-image -webkit-linear-gradient( 90deg, rgb(221,229,238) 0%, rgb(221,229,238) 53%, rgb(255,255,255) 100%)
+        background-image -ms-linear-gradient( 90deg, rgb(221,229,238) 0%, rgb(221,229,238) 53%, rgb(255,255,255) 100%)
+
+        &:hover
+            background-color #fff
+            color $color-darkcoral
+
+    &--default
+        background-color $color-darkcoral
+        color $color-button
+        border-color $color-darkcoral
+
+        &:hover
+            background-color #fff
+            color $color-darkcoral
+
+    &--black
+        background-color $color-black
+        color $color-button
+        border-color $color-smokyblack
+
+        &:hover
+            background-color $color-button
+            color $color-smokyblack
+
+    &--pagination-prev
+        background-color $color-pagination
+        color $color-smokyblack
+        border-color $color-pagination
+        border-radius 2px
+        box-shadow 0px 3px 5px 0px rgba(0, 0, 0, 0.1)
+
+        &:hover
+            background-color $color-button
+            color $color-smokyblack
+
+    &--pagination-next
+        background-color $color-smokyblack
+        color $color-pagination
+        border-color $color-smokyblack
+        border-radius 2px
+        box-shadow 0px 3px 5px 0px rgba(0, 0, 0, 0.1)
+
+        &:hover
+            background-color $color-button
+            color $color-smokyblack
+
+    &--block
+        display block
+        text-align center
+        width 100%
+
+.ui-circle-button
+    height 50px
+    width 50px
+    overflow hidden
+    position relative
+    display inline-block
+    text-decoration none
+
+    i
+        position absolute
+        bottom 15px
+        right 15px
+        line-height 10px
+        color #fff
+        display block
+
+    &:before
+        height 100%
+        width 200%
+        position absolute
+        content ''
+        border-radius 100px 100px 0 0
+        background-color $color-darkcoral
+        transform-origin 50% 100%
+        transform rotate(-90deg)
