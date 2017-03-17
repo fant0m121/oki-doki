@@ -29,12 +29,18 @@ init($breakpoints, $columns)
     box-sizing border-box
     outline 1px dashed green
 
+.ui-header
+    display flex
+    flex-direction column
+
 .ui-header__content
     background-color $color-white
+    padding 20px 0
 
 .ui-restriction
     max-width 1530px
     margin 0 auto
+    padding 0
 
 .ui-header__info
     font-family 'Scada'
@@ -62,3 +68,17 @@ init($breakpoints, $columns)
     font-size 20px
     line-height 32px
     text-transform uppercase
+
+.ui-menu
+    font-family 'Panton'
+    font-size 16px
+    line-height 32px
+    padding 0 40px 0 0
+    justify-content space-between
+
+    a
+        color #050505
+        text-decoration none
+
+.ui-callback
+    padding 0

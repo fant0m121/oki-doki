@@ -31,10 +31,10 @@ body
         .ui-header__content
             .grid.grid-container.ui-restriction
                 .row.row--lg-center
-                    .col.col--lg-3
+                    .col.col--lg-2
                         a.ui-header__logo
                             img(src="/images/header-logo.png")
-                    .col.col--lg-6.col--lg-flex.ui-header__info
+                    .col.col--lg-8.col--lg-flex.ui-header__info
                         .ui-slogan  Производство и продажа#[br] офисных перегородок
                         .ui-address
                             img(src="/images/location.png")
@@ -42,10 +42,33 @@ body
                         .ui-regim
                             ПН-ЧТ 9:00 — 19:00#[br]
                             ПТ 9:00 — 18:00
-                    .col.col--lg-3.text--lg-right
+                    .col.col--lg-2.text--lg-center
                         .ui-phone 8 (495) 663 18 81
-        .ui-header__menu
-    
+        .ui-header__menu.grid.grid-container
+            .ui-restriction.row.row--lg-center
+                nav.ui-menu.col.col--lg-10.col--lg-flex
+                  .ui-menu__item
+                      a.ui-menu__link(href="") Каталог
+                  .ui-menu__item
+                      a.ui-menu__link(href="") Конфигурации
+                  .ui-menu__item
+                      a.ui-menu__link(href="") Сервис
+                  .ui-menu__item
+                      a.ui-menu__link(href="") Проекты
+                  .ui-menu__item
+                      a.ui-menu__link(href="") Цены
+                  .ui-menu__item
+                      a.ui-menu__link(href="") Направления
+                  .ui-menu__item
+                      a.ui-menu__link(href="") О компании
+                  .ui-menu__item
+                      a.ui-menu__link(href="") Дилерам
+                  .ui-menu__item
+                      a.ui-menu__link(href="") Вопрос-ответ
+                  .ui-menu__item
+                      a.ui-menu__link(href="") Контакты
+                .col.col--lg-2.ui-callback.js-show-callback
+                    a.ui-button.ui-button--size-lg.ui-button--default.ui-button--block Перезвоните мне
     main
         block content
     footer footer
