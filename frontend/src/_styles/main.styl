@@ -49,6 +49,7 @@ init($breakpoints, $columns)
     color $color-trolleygrey
     justify-content space-between
     text-transform uppercase
+    padding-right 300px
 
 .ui-header__menu
     background-color $color-isabelline
@@ -79,6 +80,12 @@ init($breakpoints, $columns)
     a
         color #050505
         text-decoration none
+
+.ui-menu__link
+    &:hover
+        color #439fac
+        border-bottom 3px solid #439fac
+        cursor pointer
 
 .ui-callback
     padding 0
