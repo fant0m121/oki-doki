@@ -28,6 +28,12 @@ init($breakpoints, $columns)
 *:after
     box-sizing border-box
     outline 1px dashed green
+    margin 0
+    padding 0
+
+.ui-page
+  display flex
+  flex-direction column
 
 .ui-header
     display flex
@@ -43,10 +49,6 @@ init($breakpoints, $columns)
     padding 0
 
 .ui-header__info
-    font-family 'Scada'
-    font-size 12px
-    line-height 16px
-    color $color-trolleygrey
     justify-content space-between
     text-transform uppercase
     padding-right 300px
@@ -54,21 +56,43 @@ init($breakpoints, $columns)
 .ui-header__menu
     background-color $color-isabelline
 
-.ui-header__logo
+.ui-logo
     cursor pointer
 
+.ui-slogan
+    font-family 'Scada'
+    font-size 12px
+    line-height 16px
+    color $color-trolleygrey
+
 .ui-address
-    display flex
-    align-items center
+    font-family 'Scada'
+    font-size 12px
+    line-height 16px
+    color $color-trolleygrey
+
+    &__header
+        display flex
+        align-items center
 
     img
         padding-right 13px
+
+.ui-regim
+    font-family 'Scada'
+    font-size 12px
+    line-height 16px
+    color $color-trolleygrey
 
 .ui-phone
     font-family 'Panton'
     font-size 20px
     line-height 32px
     text-transform uppercase
+
+    &__footer
+        font-family 'Scada'
+        color #fff
 
 .ui-menu
     font-family 'Panton'
@@ -81,11 +105,37 @@ init($breakpoints, $columns)
         color #050505
         text-decoration none
 
-.ui-menu__link
-    &:hover
-        color #439fac
-        border-bottom 3px solid #439fac
-        cursor pointer
+    &__link
+        &:hover
+            color #439fac
+            border-bottom 3px solid #439fac
+            cursor pointer
+
+.ui-footer-menu
+    font-family 'Panton'
+    font-size 16px
+    line-height 32px
+    justify-content space-between
+
+    a
+        color $color-trolleygrey
+        text-decoration none
+
+    &__link
+        &:hover
+            cursor pointer
 
 .ui-callback
     padding 0
+
+.ui-footer
+    background-color $color-dark
+    color $color-trolleygrey
+    padding 30px 0 20px 0
+
+.ui-footer-copy
+    border-top 1px solid $color-trolleygrey
+    margin-top 20px
+    padding-top 20px
+    text-align center
+    font-size 12px
