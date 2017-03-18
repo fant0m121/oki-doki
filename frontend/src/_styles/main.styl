@@ -4,20 +4,20 @@
 // Import Modules
 @import '../_modules/link/link';
 @import '_variable';
-@import 'modules\fonts';
-@import 'modules\button';
-@import 'modules\steps-vertical';
-@import 'modules\form';
+@import 'modules/fonts';
+@import 'modules/button';
+@import 'modules/steps-vertical';
+@import 'modules/form';
 
-@import '../../node_modules/flexbox-grid-stylus/src/mixins/helpers'
-@import '../../node_modules/flexbox-grid-stylus/src/mixins/grid-framework'
-@import '../../node_modules/flexbox-grid-stylus/src/mixins/bem'
+@import 'grid/mixins/helpers'
+@import 'grid/mixins/grid-framework'
+@import 'grid/mixins/bem'
 
 // Components
-@import '../../node_modules/flexbox-grid-stylus/src/components/col'
-@import '../../node_modules/flexbox-grid-stylus/src/components/grid'
-@import '../../node_modules/flexbox-grid-stylus/src/components/row'
-@import '../../node_modules/flexbox-grid-stylus/src/components/text'
+@import 'grid/components/col'
+@import 'grid/components/grid'
+@import 'grid/components/row'
+@import 'grid/components/text'
 
 init($breakpoints, $columns)
 // Box sizing partial styles
@@ -42,11 +42,6 @@ init($breakpoints, $columns)
 .ui-header__content
     background-color $color-white
     padding 20px 0
-
-.ui-restriction
-    max-width 1530px
-    margin 0 auto
-    padding 0
 
 .ui-header__info
     justify-content space-between
@@ -98,7 +93,7 @@ init($breakpoints, $columns)
     font-family 'Panton'
     font-size 16px
     line-height 32px
-    padding 0 40px 0 0
+    padding-right 40px
     justify-content space-between
 
     a
@@ -124,9 +119,6 @@ init($breakpoints, $columns)
     &__link
         &:hover
             cursor pointer
-
-.ui-callback
-    padding 0
 
 .ui-footer
     background-color $color-dark
