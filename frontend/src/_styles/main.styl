@@ -1,5 +1,8 @@
 // Normalize Styles
 @import '../../node_modules/normalize.css/normalize.css';
+@import '../../node_modules/animate.css/animate.css';
+@import '../../node_modules/owl.carousel/dist/assets/owl.carousel.css';
+@import '../../node_modules/owl.carousel/dist/assets/owl.theme.default.css';
 
 // Import Modules
 @import '../_modules/link/link';
@@ -8,6 +11,7 @@
 @import 'modules/button';
 @import 'modules/steps-vertical';
 @import 'modules/form';
+@import 'modules/heading';
 
 @import 'grid/mixins/helpers'
 @import 'grid/mixins/grid-framework'
@@ -131,3 +135,66 @@ init($breakpoints, $columns)
     padding-top 20px
     text-align center
     font-size 12px
+
+.ui-project-home
+    background #fff url('/images/project-home-bg.jpg') no-repeat 50% 0
+    padding-bottom 30px
+    
+    &__header
+        padding 40px 0 25px
+        
+    &__content
+        height 387px
+        background #009ba4
+        color #fff
+        padding 30px 20px 60px 20px
+        position relative
+        
+    &__title
+        font-size 26px
+        line-height 36px
+        font-family 'Panton'
+        font-weight bold
+        
+    &__text
+        font-family 'Panton'
+        font-size 16px
+        line-height 26px
+        margin-top 35px
+        
+    &__link
+        position absolute
+        bottom 0
+        right 0
+        width 60px
+        height 60px
+        
+    &__photo
+        background-repeat no-repeat
+        background-size cover
+        background-position 50% 50%
+        height 387px
+        width 100%
+        
+        &--small
+            height 185px
+
+        &--small + &--small
+            margin-top 17px
+
+.ui-slider-nav
+    display flex
+    width 100%
+    justify-content space-between
+    align-items center
+    
+    &__arrow
+        cursor pointer
+    
+    &__number
+        color #fcfcfc
+        line-height 40px
+        font-size 32px
+        font-family 'Rubik'
+        font-weight 500
+        
