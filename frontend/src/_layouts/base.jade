@@ -30,21 +30,21 @@ body.ui-page
     header.ui-header 
         .ui-header__content
             .grid.grid--container
-                .row.row--lg-center
-                    .col.col--lg-2
+                .row.row--xl-center
+                    .col.col--xl-2.col--md-3
                         a.ui-logo(href="/")
                             img(src="/images/header-logo.png")
-                    .col.col--lg-8.col--lg-flex.ui-header__info
+                    .col.col--xl-8.col--md-6.col--md-flex.ui-header__info
                         .ui-slogan  Производство и продажа#[br] офисных перегородок
                         .ui-address.ui-address__header
                             img(src="/images/location.png")
                             Г. МОСКВА,#[br]  СОКОЛЬНИЧЕСКИЙ ВАЛ, 1А
                         .ui-regim ПН-ЧТ 9:00 — 19:00#[br] ПТ 9:00 — 18:00
-                    .col.col--lg-2.text--lg-center
+                    .col.col--xl-2.col--md-3.text--xl-center
                         .ui-phone 8 (495) 663 18 81
         .ui-header__menu.grid.grid--container
-            .row.row--lg-center
-                nav.ui-menu.col.col--lg-10.col--lg-flex
+            .row.row--xl-center
+                nav.ui-menu.col.col--xl-10.col--xl-flex
                   .ui-menu__item
                       a.ui-menu__link(href="") Каталог
                   .ui-menu__item
@@ -65,7 +65,7 @@ body.ui-page
                       a.ui-menu__link(href="") Вопрос-ответ
                   .ui-menu__item
                       a.ui-menu__link(href="") Контакты
-                .col.col--lg-2.js-show-callback
+                .col.col--xl-2.js-show-callback
                     a.ui-button.ui-button--size-lg.ui-button--default.ui-button--block Перезвоните мне
                     
     main.ui-content
@@ -73,17 +73,17 @@ body.ui-page
         
     footer.ui-footer
         .grid.grid--container
-            .row.row--lg-center
-                .col.col--lg-2
+            .row.row--xl-center
+                .col.col--xl-2
                     a.ui-logo(href="/")
                         img(src="/images/footer-logo.png")
-                .ui-address.col.col--lg-8 Г. МОСКВА,  СОКОЛЬНИЧЕСКИЙ ВАЛ, 1А
-                .col.col--lg-2.text--lg-right
+                .ui-address.col.col--xl-8 Г. МОСКВА,  СОКОЛЬНИЧЕСКИЙ ВАЛ, 1А
+                .col.col--xl-2.text--xl-right
                     .ui-phone__footer.ui-phone 8 (495) 663 18 81
-            .row.row--lg-center
-                .col.col--lg-2
+            .row.row--xl-center
+                .col.col--xl-2
                     .ui-slogan  Производство и продажа#[br] офисных перегородок
-                nav.ui-footer-menu.col.col--lg-8.col--lg-flex
+                nav.ui-footer-menu.col.col--xl-8.col--xl-flex
                   .ui-footer-menu__item
                       a.ui-footer-menu__link(href="") Каталог
                   .ui-footer-menu__item
@@ -104,11 +104,11 @@ body.ui-page
                       a.ui-footer-menu__link(href="") Вопрос-ответ
                   .ui-footer-menu__item
                       a.ui-footer-menu__link(href="") Контакты
-                .col.col--lg-2.text--lg-right
+                .col.col--xl-2.text--xl-right
                     .ui-regim ПН-ЧТ 9:00 — 19:00#[br] ПТ 9:00 — 18:00
         .grid.grid--no-gutters
-            .row.row--lg-center.row--no-gutters
-                .ui-footer-copy.col.col--lg-12.col--no-gutters
+            .row.row--xl-center.row--no-gutters
+                .ui-footer-copy.col.col--xl-12.col--no-gutters
                     .ui-copy © 2001-2017 «ОКИ-ДОКИ»#[br] Все представленные материалы защищены авторскими правами. Воспроизведение или распространение указанных материалов в любой форме может#[br] производиться только с письменного разрешения правообладателя. При использовании, ссылка на правообладателя и источник заимствования обязательна.
     block scripts
         script(src= baseUrl + 'scripts/main.js')

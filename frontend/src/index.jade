@@ -1,12 +1,31 @@
 extends _layouts/base
 
 block content
+    .ui-customer-reviews
+        .grid.grid--container
+            .row
+                .col.col--xl-3
+                    .ui-customer-reviews__header.ui-heading.ui-heading--white.ui-heading--lvl2 Конфигурации перегородок
+                    .ui-slider-nav
+                        a.ui-slider-nav__arrow.js-customer-reviews-carousel-prew
+                            img(src="/images/icons/arrow-left.svg", alt="", height="47", width="16")
+                        span.ui-slider-nav__number.js-customer-reviews-carousel-number 1
+                        a.ui-slider-nav__arrow.js-customer-reviews-carousel-next
+                            img(src="/images/icons/arrow-rigth.svg", alt="", height="47", width="16")
+                .col.col--xl-9.owl-carousel.owl-theme.js-customer-reviews-carousel
+                    .ui-customer-reviews__content
+                        .ui-customer-reviews__photo(style="background-image: url('/images/сonfigurations/1.png')")
+                        .ui-customer-reviews__title Конфигурация офисных#[br] перегородок №М2
+                        .ui-customer-reviews__link
+                            a.ui-circle-button.ui-circle-button--red.ui-circle-button--size-md(href="#")
+                                i +
+        
     .ui-project-home
         .grid.grid--container
-            .row.row--lg-center.ui-project-home__header
-                .col.col--lg-11
+            .row.row--xl-center.ui-project-home__header
+                .col.col--xl-11
                     .ui-heading.ui-heading--white.ui-heading--lvl2 Истории проектов
-                .col.col--lg-1
+                .col.col--xl-1
                     .ui-slider-nav
                         a.ui-slider-nav__arrow.js-project-carousel-prew
                             img(src="/images/icons/arrow-left.svg", alt="", height="47", width="16")
@@ -15,43 +34,43 @@ block content
                             img(src="/images/icons/arrow-rigth.svg", alt="", height="47", width="16")
         .grid.grid--container.owl-carousel.owl-theme.js-project-carousel
             .row
-                .col.col--lg-3
+                .col.col--xl-3
                     .ui-project-home__content
                         .ui-project-home__title Монтаж офисных перегородок для ООО «Фиас Констракшн»
                         .ui-project-home__text Часто бывает, что заказчику необходимо в сжатые сроки разделить отдельно рабочие зоны, при этом выдержать деловой стиль и не стеснять пространство и без того не большого помещения.
                         .ui-project-home__link
                             a.ui-circle-button.ui-circle-button--red.ui-circle-button--size-md(href="#")
                                 i +
-                .col.col--lg-6.col--lg-flex
+                .col.col--xl-6.col--xl-flex
                     .ui-project-home__photo(style="background-image: url('/images/projects/1.jpg')")
-                .col.col--lg-3
+                .col.col--xl-3
                     .ui-project-home__photo--small(style="background-image: url('/images/projects/1.jpg')")
                     .ui-project-home__photo--small(style="background-image: url('/images/projects/1.jpg')")
 
             .row
-                .col.col--lg-3
+                .col.col--xl-3
                     .ui-project-home__content
                         .ui-project-home__title Монтаж офисных перегородок для ООО «Фиас Констракшн»
                         .ui-project-home__text Часто бывает, что заказчику необходимо в сжатые сроки разделить отдельно рабочие зоны, при этом выдержать деловой стиль и не стеснять пространство и без того не большого помещения.
                         .ui-project-home__link
                             a.ui-circle-button.ui-circle-button--red.ui-circle-button--size-md(href="#")
                                 i +
-                .col.col--lg-6.col--lg-flex
+                .col.col--xl-6.col--xl-flex
                     .ui-project-home__photo(style="background-image: url('/images/projects/1.jpg')")
-                .col.col--lg-3
+                .col.col--xl-3
                     .ui-project-home__photo--small(style="background-image: url('/images/projects/1.jpg')")
                     .ui-project-home__photo--small(style="background-image: url('/images/projects/1.jpg')")
             .row
-                .col.col--lg-3
+                .col.col--xl-3
                     .ui-project-home__content
                         .ui-project-home__title Монтаж офисных перегородок для ООО «Фиас Констракшн»
                         .ui-project-home__text Часто бывает, что заказчику необходимо в сжатые сроки разделить отдельно рабочие зоны, при этом выдержать деловой стиль и не стеснять пространство и без того не большого помещения.
                         .ui-project-home__link
                             a.ui-circle-button.ui-circle-button--red.ui-circle-button--size-md(href="#")
                                 i +
-                .col.col--lg-6.col--lg-flex
+                .col.col--xl-6.col--xl-flex
                     .ui-project-home__photo(style="background-image: url('/images/projects/1.jpg')")
-                .col.col--lg-3
+                .col.col--xl-3
                     .ui-project-home__photo--small(style="background-image: url('/images/projects/1.jpg')")
                     .ui-project-home__photo--small(style="background-image: url('/images/projects/1.jpg')")
 
