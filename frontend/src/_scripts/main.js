@@ -30,23 +30,24 @@ $(function() {
 });
 
 $(function() {
-    var owlProject =  $('.js-customer-reviews-carousel');
-    owlProject.owlCarousel({
+    var owlCustomer =  $('.js-customer-reviews-carousel');
+    owlCustomer.owlCarousel({
         items: 3,
         loop: true,
         autoplay: true,
-        dots: false
+        dots: false,
+        margin: 30
     });
 
     $('.js-customer-reviews-carousel-next').on('click', function() {
-        owlProject.trigger('next.owl.carousel');
+        owlCustomer.trigger('next.owl.carousel');
     });
     $('.js-customer-reviews-carousel-prew').on('click', function() {
-        owlProject.trigger('prev.owl.carousel');
+        owlCustomer.trigger('prev.owl.carousel');
     });
-    owlProject.on('changed.owl.carousel', function(event) {
+    owlCustomer.on('changed.owl.carousel', function(event) {
         console.log(event.item.index);
-        $('.js-customer-reviews-carousel-number').text(event.item.index - 1);
+        $('.js-customer-reviews-carousel-number').text(event.item.index - 2);
     })
     console.log('Welcome to Yeogurt!');
 });
