@@ -12,6 +12,8 @@
 @import 'modules/steps-vertical';
 @import 'modules/form';
 @import 'modules/heading';
+@import 'modules/text';
+@import 'modules/text-box';
 
 @import 'grid/mixins/helpers'
 @import 'grid/mixins/grid-framework'
@@ -238,6 +240,16 @@ init($breakpoints, $columns)
     &__no-number
         max-width 70px
 
+.ui-rewiew
+    background linear-gradient(to bottom, #ececec 322px, #fff 322px, #fff 100%)
+    color #313131
+
+    &__header
+        padding 40px 0 25px
+
+    &__text
+        padding 50px 0 44px
+
 .ui-customer-reviews
     background #fff url('/images/customer-reviews-bg.png') no-repeat 50% 0
     padding 40px 0
@@ -262,7 +274,7 @@ init($breakpoints, $columns)
         font-family 'Panton'
         font-weight bold
         background #e8e8e8
-        padding 19px
+        padding 19px 15px 35px
 
     &__link
         position absolute
