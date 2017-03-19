@@ -51,3 +51,22 @@ $(function() {
     })
     console.log('Welcome to Yeogurt!');
 });
+
+$(function() {
+    var owlCustomer =  $('.js-customer-reviews-carousel');
+    owlCustomer.owlCarousel({
+        items: 4,
+        loop: true,
+        autoplay: true,
+        dots: false,
+        margin: 30
+    });
+
+    $('.js-customer-reviews-carousel-next').on('click', function() {
+        owlCustomer.trigger('next.owl.carousel');
+    });
+    $('.js-customer-reviews-carousel-prew').on('click', function() {
+        owlCustomer.trigger('prev.owl.carousel');
+    })
+    console.log('Welcome to Yeogurt!');
+});
