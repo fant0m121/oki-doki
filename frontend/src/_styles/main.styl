@@ -14,6 +14,7 @@
 @import 'modules/heading';
 @import 'modules/text';
 @import 'modules/text-box';
+@import 'modules/material-box';
 
 @import 'grid/mixins/helpers'
 @import 'grid/mixins/grid-framework'
@@ -312,3 +313,58 @@ init($breakpoints, $columns)
 
     &__element-first
         background none
+
+.ui-mounting
+    font-family 'Panton'
+    line-height 30px
+    color $color-medium
+    padding-bottom 50px
+
+    &__title
+        font-size 30px
+        padding-bottom 45px
+
+    &__text
+        font-size 20px
+
+.ui-our-advantages-title
+    font-family 'Panton'
+    font-size 50px
+    color $color-medium
+    line-height 70px
+    display flex
+    justify-content center
+
+.ui-our-advantages-block
+    border 3px solid $color-platinum
+    width 100%
+    padding 40px 20px 54px 25px
+    font-family 'Panton'
+    font-size 20px
+    color $color-medium
+    line-height 45px
+
+    &__list
+        list-style none
+
+.ui-home-price-box
+    background $color-platinum
+    font-family 'Panton'
+    color $color-medium
+    line-height 30px
+    padding 22px
+    min-height 192px
+    margin 47px 0 57px
+
+    &__icon
+        display flex
+        align-items center
+        justify-content center
+
+    &__title
+        font-size 30px
+        font-weight bold
+        padding-bottom 25px
+
+    &__text
+        font-size 16px
