@@ -368,3 +368,100 @@ init($breakpoints, $columns)
 
     &__text
         font-size 16px
+
+.ui-order
+    padding 50px 0 50px
+
+    ul
+        list-style none
+
+    &__title
+        font-family 'Rubik'
+        font-size 43px
+        line-height 60px
+        color $color-medium
+
+    &__step
+        font-family 'Rubik'
+        font-size 20px
+        color $color-medium
+        line-height 30px
+        display flex
+        align-items center
+        justify-content space-between
+        width 100%
+
+.ui-step
+    background $color-platinum
+
+    &__title
+        padding-left 10px
+
+    &--first
+        display flex
+        align-items center
+        color #fff
+        background $color-darkcoral
+        height 92px
+        padding 16px 12px
+        position relative
+
+        &:after
+            border 47px solid transparent
+            content ''
+            border-left 40px solid $color-darkcoral
+            width 0
+            height 0
+            position absolute
+            display block
+            right -86px
+            top 0
+
+    &--center
+        display flex
+        align-items center
+        height 92px
+        padding 16px 12px
+        position relative
+
+        &:before
+            content ''
+            border-top 47px solid $color-platinum
+            border-bottom 47px solid $color-platinum
+            border-left 40px solid transparent
+            left -40px
+            top 0
+            width 0
+            height 0
+            position absolute
+            display block
+
+        &:after
+            border 47px solid transparent
+            content ''
+            border-left 40px solid $color-platinum
+            width 0
+            height 0
+            position absolute
+            display block
+            right -86px
+            top 0
+
+    &--last
+        display flex
+        align-items center
+        height 92px
+        padding 16px 12px
+        position relative
+
+        &:before
+            content ''
+            border-top 47px solid $color-platinum
+            border-bottom 47px solid $color-platinum
+            border-left 40px solid transparent
+            left -40px
+            top 0
+            width 0
+            height 0
+            position absolute
+            display block

@@ -37,6 +37,26 @@ block content
                         .ui-configuration__link
                             a.ui-circle-button.ui-circle-button--red.ui-circle-button--size-md(href="#")
                                 i +
+    .ui-order
+        .grid.grid--container
+            .row.row--xl-center
+                .col.col--xl-4
+                    .ui-order__title Сделать заказ просто:
+                .col.col--xl-8.col--xl-align-middle.col--xl-flex
+                    .ui-order__step
+                        .ui-step
+                            .ui-step--first 
+                                img(src="/images/icons/order-step-1.png", alt="", height="51", width="61")
+                                .ui-step__title Вы отправляете заявку
+                        .ui-step
+                            .ui-step--center 
+                                img(src="/images/icons/order-step-2.png", alt="", height="57", width="57")
+                                .ui-step__title Согласовываем #[br]дизайн-проект
+                        .ui-step
+                            .ui-step--last 
+                                img(src="/images/icons/order-step-3.png", alt="", height="54", width="54")
+                                .ui-step__title Производим #[br]монтаж и установку
+            
     .ui-project-home
         .grid.grid--container
             .row.row--xl-center.ui-project-home__header
