@@ -393,11 +393,24 @@ init($breakpoints, $columns)
 
 .ui-step
     background $color-platinum
+    flex 1
+    padding-left 77px
+    margin-left -77px
+    padding-right 54px
+    overflow hidden
+    
+    &:first-child
+        padding-right 54px
+        margin-left 0
+        padding-left 0
+        
+    &:last-child
+        padding-right 0
 
     &__title
         padding-left 10px
 
-    &--first
+    &__first
         display flex
         align-items center
         color #fff
@@ -405,6 +418,7 @@ init($breakpoints, $columns)
         height 92px
         padding 16px 12px
         position relative
+        margin 0
 
         &:after
             border 47px solid transparent
@@ -416,8 +430,9 @@ init($breakpoints, $columns)
             display block
             right -86px
             top 0
+            background #fff
 
-    &--center
+    &__center
         display flex
         align-items center
         height 92px
@@ -446,8 +461,9 @@ init($breakpoints, $columns)
             display block
             right -86px
             top 0
+            background #fff
 
-    &--last
+    &__last
         display flex
         align-items center
         height 92px
