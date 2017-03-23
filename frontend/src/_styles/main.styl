@@ -398,12 +398,12 @@ init($breakpoints, $columns)
     margin-left -77px
     padding-right 54px
     overflow hidden
-    
+
     &:first-child
         padding-right 54px
         margin-left 0
         padding-left 0
-        
+
     &:last-child
         padding-right 0
 
@@ -481,3 +481,32 @@ init($breakpoints, $columns)
             height 0
             position absolute
             display block
+
+.ui-advantage
+
+    &__list
+        background $color-platinum
+        font-family 'Panton'
+        font-size 26px
+        color $color-darkcoral
+        line-height 22px
+        display flex
+        flex-direction column
+        align-items center
+        padding 17px 42px
+        margin-right 5px
+
+        &:last-child
+            margin-right 0
+
+    &__icon
+        height 78px
+        width 78px
+        border 2px solid $color-darkcoral
+        border-radius 78px
+        display flex
+        align-items center
+        justify-content center
+
+    &__title
+        padding-top 15px
