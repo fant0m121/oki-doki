@@ -522,15 +522,15 @@ init($breakpoints, $columns)
         color $color-medium
         line-height 70px
         padding-bottom 30px
-
-    &__cart
-        display flex
-        align-items center
+    
+    &__product
+        margin 45px 0
 
     &__variation
-        width 724px
-        height 383px
+        flex 1
         position relative
+        margin 45px 0
+        background-size cover
 
     &__navigation
         position absolute
@@ -543,13 +543,15 @@ init($breakpoints, $columns)
     &__specifications
         background $color-platinum
         box-shadow 0px 3px 21px 0px rgba(0, 0, 0, 0.2)
-        padding 15px
+        max-width 300px
 
-.ui-specifications
+.ui-our-production-specifications
     font-family 'Panton'
     font-size 20px
     line-height 26px
-    padding 30px 35px
+    display flex
+    flex-direction column
+    height 100%
 
     &__title
         font-weight bold
@@ -557,9 +559,19 @@ init($breakpoints, $columns)
         color #1b1b1b
         line-height 32px
         padding-bottom 48px
+        padding 30px 55px
+        
+    &__content
+        padding 10px 55px
+        flex 1
 
+    &__text + &__text
+        margin-top 30px
+        
     &__text
-        padding-bottom 30px
 
-    span
-        font-size 16px
+        span
+            font-size 16px
+            
+    &__button
+        padding 30px 20px
