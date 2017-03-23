@@ -15,6 +15,7 @@
 @import 'modules/text';
 @import 'modules/text-box';
 @import 'modules/material-box';
+@import 'modules/product-cart-small';
 
 @import 'grid/mixins/helpers'
 @import 'grid/mixins/grid-framework'
@@ -510,3 +511,55 @@ init($breakpoints, $columns)
 
     &__title
         padding-top 15px
+
+.ui-our-production
+    padding 60px 15px
+    margin 0 auto
+
+    &__title
+        font-family 'Panton'
+        font-size 60px
+        color $color-medium
+        line-height 70px
+        padding-bottom 30px
+
+    &__cart
+        display flex
+        align-items center
+
+    &__variation
+        width 724px
+        height 383px
+        position relative
+
+    &__navigation
+        position absolute
+        bottom 0
+        width 100%
+        display flex
+        justify-content space-between
+        text-align center
+
+    &__specifications
+        background $color-platinum
+        box-shadow 0px 3px 21px 0px rgba(0, 0, 0, 0.2)
+        padding 15px
+
+.ui-specifications
+    font-family 'Panton'
+    font-size 20px
+    line-height 26px
+    padding 30px 35px
+
+    &__title
+        font-weight bold
+        font-size 26px
+        color #1b1b1b
+        line-height 32px
+        padding-bottom 48px
+
+    &__text
+        padding-bottom 30px
+
+    span
+        font-size 16px
