@@ -1,6 +1,25 @@
 extends _layouts/base
 
 block content
+    .ui-catalog-interactives
+        .grid.grid--container
+            .row
+                .col.col--xl-12
+                    .ui-catalog-interactives__title Технологии офисного#[br] пространства
+            .row.row--xl-center
+                .col.col--xl-4
+                    .ui-product-cart-small
+                        .ui-product-cart-small__title.ui-product-cart-small__title--darkcoral Цельностеклянные#[br] перегородки
+                        .ui-product-cart-small__description Цельностеклянные перегородки имеют безрамную конструкцию и создают ощущение открытого пространства в вашем офисе
+                        .ui-product-cart-small__footer
+                            .ui-product-cart-small__price Цена от 3600 руб/м2
+                            .ui-product-cart-small__time Срок: от 10 дней
+                            .ui-product-cart-small__link
+                                a.ui-circle-button.ui-circle-button--red.ui-circle-button--size-md(href="#")
+                                    i +
+                .col.col--xl-8
+                    .ui-catalog-interactives__img
+                        img(src="/images/catalog-interactives.png")
     .ui-advantage
         .grid.grid--container
             .row.row--xl-center
@@ -20,8 +39,7 @@ block content
                     .ui-advantage__list
                         .ui-advantage__icon
                             img(src="/images/icons/price.png")
-                        .ui-advantage__title Цена
-                        
+                        .ui-advantage__title Цена                      
     .ui-our-production
         .grid.grid--container
             .row
