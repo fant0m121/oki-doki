@@ -484,21 +484,60 @@ init($breakpoints, $columns)
             display block
 
 .ui-advantage
+    display block
+    margin-top 60px
+    
+    & .col
+        transition width .2s ease
+        cursor pointer
 
-    &__list
-        background $color-platinum
+        &:hover
+            width 50%
+            flex none
+            
+            & ^[0]__content
+                padding 17px 79px 17px 42px
+                width 100%
+                height auto
+                visibility visible
+                
+            & ^[0]__item
+                background #009ba4
+                color #fff
+                
+            & ^[0]__header
+                border-color #fff
+                
+            & ^[0]__icon
+                border-color #fff
+                
+                svg
+                    color #fff
+                    fill #fff
+                
+            & ^[0]__text
+                display block
+                height 100%
+                visibility visible
+
+    &__item
+        display flex
+        position relative
+        background-color $color-platinum
         font-family 'Panton'
-        font-size 26px
         color $color-darkcoral
+        padding 10px 0
+        align-items center
+        justify-content center
+        
+    &__header
+        font-size 26px
         line-height 22px
         display flex
         flex-direction column
         align-items center
-        padding 17px 42px
-        margin-right 5px
-
-        &:last-child
-            margin-right 0
+        padding 7px 40px 7px 42px
+        border-right 2px solid transparent
 
     &__icon
         height 78px
@@ -508,6 +547,30 @@ init($breakpoints, $columns)
         display flex
         align-items center
         justify-content center
+        
+        svg
+            color $color-darkcoral
+            fill $color-darkcoral
+        
+    &__link
+        width 79px
+        height 79px
+        position absolute
+        bottom 0
+        right 0
+        
+    &__content
+        padding 0
+        width 0
+        overflow hidden
+        visibility hidden
+        
+    &__text
+        display none
+        overflow hidden
+        visibility hidden
+        height 0
+        font-size 18px
 
     &__title
         padding-top 15px
