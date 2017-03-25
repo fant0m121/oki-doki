@@ -1,6 +1,7 @@
 //- Custom Configuration
 block config
     - var baseUrl = config.baseUrl || './'
+    - var pageClass = config.pageClass || 'default'
 
 doctype html
 
@@ -48,7 +49,7 @@ body.ui-page
                 .row.row--xl-center
                     nav.ui-menu.col.col--xl-10.col--xl-flex
                       .ui-menu__item
-                          a.ui-menu__link(href="") Каталог
+                          a.ui-menu__link(href="/catalog/") Каталог
                       .ui-menu__item
                           a.ui-menu__link(href="") Конфигурации
                       .ui-menu__item

@@ -68,3 +68,46 @@
         position absolute
         bottom 20px
         left 20px
+
+.ui-product-cart
+    box-shadow 0px 3px 21px 0px rgba(0, 0, 0, 0.2)
+    position relative
+
+    &:hover &__description
+        background $color-bondiblue
+
+    &:hover &__link
+        & .ui-circle-button
+            &:before
+                background #250b09
+
+    &__title
+        background-repeat no-repeat
+        background-position 50% 50%
+        background-size cover
+        height 294px
+        display flex
+        justify-content center
+        align-items center
+        text-align center
+        font-family 'FiraSans'
+        font-size 26px
+        color #ffffff
+        line-height 30px
+        font-weight bold
+
+    &__description
+        font-family 'Panton'
+        font-size 16px
+        color #090909
+        padding 25px 65px 40px 25px
+        display flex
+        align-items center
+        height 119px
+
+    &__link
+        position absolute
+        bottom 0
+        right 0
+        width 60px
+        height 60px
