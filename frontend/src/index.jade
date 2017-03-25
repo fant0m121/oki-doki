@@ -23,7 +23,7 @@ block content
     .ui-main-home
         .ui-advantage
             .grid.grid--container
-                .row.row--xl-center
+                .row.row--no-gutters
                     .col.col--xl.col--no-gutters
                         .ui-advantage__item
                             .ui-advantage__header
@@ -50,7 +50,7 @@ block content
                                         path(d="M70.6,73V33.4L55.1,41.2V33.4l-15.3,8V33.1L24.4,43,21.8,20.1H8.9L3.8,73h-4v4H74.4V73H70.6ZM7.8,73l4.7-48.8h5.7L23.8,73H7.8Zm58.8,0H27.8L24.9,47.4l10.9-7V48l15.3-8v7.7l15.5-7.8V73ZM48.2,66.3H61.6V54H48.2V66.3Zm4-8.3h5.4v4.3H52.2V58ZM23.9,10.1H37.5A10.07,10.07,0,0,0,47.6,0h-4a6.12,6.12,0,0,1-6.1,6.1H23.9A10.07,10.07,0,0,0,13.8,16.2h4A6.12,6.12,0,0,1,23.9,10.1Zm7.2,56.2H44.5V54H31.1V66.3Zm4-8.3h5.4v4.3H35.1V58Z")
                                 .ui-advantage__title Производство
                             .ui-advantage__content
-                                .ui-advantage__text Проектирование, производство, установка перегородок различного назначения (офисных и сантехнических) и любой конфигурации...
+                                .ui-advantage__text Проектирование, производство, установка перегородок различного назначения (офисных и сантехнических)...
                                 .ui-advantage__link
                                     a.ui-circle-button.ui-circle-button--red.ui-circle-button--size-md(href="#")
                                         i +
@@ -65,7 +65,7 @@ block content
                                         polygon(points="25.94 41.57 14.04 28.91 16.95 26.17 25.31 35.05 37.24 16.04 40.63 18.17 25.94 41.57")
                                 .ui-advantage__title Гарантия
                             .ui-advantage__content
-                                .ui-advantage__text Гарантийное обслуживание (бесплатное для заказчика) включает устранение скрытых дефектов и недостатков конструкции в течение указанного срока гарантии – 3 года.
+                                .ui-advantage__text Гарантийное обслуживание (бесплатное для заказчика) включает устранение скрытых дефектов и недостатков конструкции в течение указанного...
                                 .ui-advantage__link
                                     a.ui-circle-button.ui-circle-button--red.ui-circle-button--size-md(href="#")
                                         i +
@@ -118,6 +118,56 @@ block content
                                     span ДСП, ЛДСП, стекло
                             .ui-our-production-specifications__button
                                 .ui-button.ui-button--default.ui-button--size-md Расчитать стоимость
+                .row
+                    .col.col--xl-3
+                        .ui-product-cart-mini.ui-product-cart-mini--selected(style="background-image: url('/images/product-cart-mini/celnostekljannye-peregorodki.png')")
+                            .ui-product-cart-mini__info
+                                .ui-product-cart-mini__title Стеклянные#[br] перегородки
+                                .ui-product-cart-mini__price от 3600 руб/м2
+                            a.ui-product-cart-mini__link.ui-quarter-button +
+                    .col.col--xl-3
+                        .ui-product-cart-mini(style="background-image: url('/images/product-cart-mini/statsionarnyye-ofisnyye-peregorodki.png')")
+                            .ui-product-cart-mini__info
+                                .ui-product-cart-mini__title Стационарные офисные#[br] перегородки
+                                .ui-product-cart-mini__price от 2100 руб/м2
+                            a.ui-product-cart-mini__link.ui-quarter-button +
+                    .col.col--xl-3
+                        .ui-product-cart-mini(style="background-image: url('/images/product-cart-mini/mobile-office-peregorodki.png')")
+                            .ui-product-cart-mini__info
+                                .ui-product-cart-mini__title Мобильные офисные#[br] перегородки
+                                .ui-product-cart-mini__price от 1800 руб/модуль
+                            a.ui-product-cart-mini__link.ui-quarter-button +
+                    .col.col--xl-3
+                        .ui-product-cart-mini(style="background-image: url('/images/product-cart-mini/vkhodnyye-gruppy.png')")
+                            .ui-product-cart-mini__info
+                                .ui-product-cart-mini__title Входные группы
+                                .ui-product-cart-mini__price от 7000 руб/м2
+                            a.ui-product-cart-mini__link.ui-quarter-button +
+                .row
+                    .col.col--xl-3
+                        .ui-product-cart-mini.ui-product-cart-mini--selected(style="background-image: url('/images/product-cart-mini/legkiye-ekonom-peregorodki.png')")
+                            .ui-product-cart-mini__info
+                                .ui-product-cart-mini__title Легкие эконом #[br]перегородки
+                                .ui-product-cart-mini__price от 1800 руб/модуль
+                            a.ui-product-cart-mini__link.ui-quarter-button +
+                    .col.col--xl-3
+                        .ui-product-cart-mini(style="background-image: url('/images/product-cart-mini/statsionarnyye-ofisnyye-peregorodki.png')")
+                            .ui-product-cart-mini__info
+                                .ui-product-cart-mini__title Сантехнические #[br]перегородки
+                                .ui-product-cart-mini__price от 1800 руб/м2
+                            a.ui-product-cart-mini__link.ui-quarter-button +
+                    .col.col--xl-3
+                        .ui-product-cart-mini(style="background-image: url('/images/product-cart-mini/ofisnaya-mebel.png')")
+                            .ui-product-cart-mini__info
+                                .ui-product-cart-mini__title Офисная мебель
+                                .ui-product-cart-mini__price от 1500 руб/шт
+                            a.ui-product-cart-mini__link.ui-quarter-button +
+                    .col.col--xl-3
+                        .ui-product-cart-mini(style="background-image: url('/images/product-cart-mini/steklyannyye-dveri.png')")
+                            .ui-product-cart-mini__info
+                                .ui-product-cart-mini__title Стеклянные двери
+                                .ui-product-cart-mini__price от 13000 руб/шт
+                            a.ui-product-cart-mini__link.ui-quarter-button +
     .ui-configuration
         .grid.grid--container
             .row
