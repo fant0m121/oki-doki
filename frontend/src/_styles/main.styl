@@ -17,6 +17,7 @@
 @import 'modules/material-box';
 @import 'modules/product-cart';
 @import 'modules/configurations-cart';
+@import 'modules/gallery-cart';
 
 @import 'grid/mixins/helpers'
 @import 'grid/mixins/grid-framework'
@@ -686,3 +687,29 @@ init($breakpoints, $columns)
 
             li
                 padding-top 30px
+
+.ui-gallery
+    padding-bottom 50px
+
+    &__header
+        padding 30px 0
+
+.ui-pagination
+    padding 50px 0
+    display flex
+    align-items center
+    justify-content center
+
+    &__item
+        padding 0 10px
+        font-family 'Panton'
+        font-size 20px
+        color $color-smokyblack
+        line-height 30px
+
+    a
+        &:hover
+            color $color-darkcoral
+
+        span
+            color $color-darkcoral
