@@ -25,8 +25,7 @@ $(function() {
     owlProject.on('changed.owl.carousel', function(event) {
         console.log(event.item.index);
         $('.js-project-carousel-number').text(event.item.index - 1);
-    })
-    console.log('Welcome to Yeogurt!');
+    });
 });
 
 $(function() {
@@ -48,8 +47,7 @@ $(function() {
     owlCustomer.on('changed.owl.carousel', function(event) {
         console.log(event.item.index);
         $('.js-configuration-carousel-number').text(event.item.index - 2);
-    })
-    console.log('Welcome to Yeogurt!');
+    });
 });
 
 $(function() {
@@ -67,19 +65,19 @@ $(function() {
     });
     $('.js-customer-reviews-carousel-prew').on('click', function() {
         owlCustomer.trigger('prev.owl.carousel');
-    })
-    console.log('Welcome to Yeogurt!');
+    });
 });
 
 $(function() {
-    $('ul.ui-faq li > a').click(function(){
+    $('.js-faq-item').on('click', function(){
         if(!$(this).hasClass('active')){
-            $('ul.ui-faq li > a').removeClass('active').next('div').slideUp();
-            $(this).addClass('active');
+            $('.js-faq-item').removeClass('active').next('div').slideUp();
+            $('.js-faq-item').find('span').text('+');
+            $(this).addClass('active').find('span').text('-');
             $(this).next('div').slideDown(200);
       } else {
-          $(this).removeClass('active').next('div').slideUp();	
+            $(this).removeClass('active').next('div').slideUp();	
+            $(this).find('span').text('+');
         }
     });
-    console.log('Welcome to Yeogurt!');
 });

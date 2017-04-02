@@ -70,18 +70,19 @@
         left 20px
 
 .ui-product-cart
-    box-shadow 0px 3px 21px 0px rgba(0, 0, 0, 0.1)
+    box-shadow 0px 3px 21px 0px rgba(0, 0, 0, .1)
     position relative
+    cursor pointer
 
     &:hover &__description
-        background $color-bondiblue
-        transition all 0.45s ease-in-out
+        background-color $color-bondiblue
+        transition all .25s ease-in-out
 
     &:hover &__link
         & .ui-circle-button
             &:before
-                background #250b09
-                transition all 0.45s ease-in-out
+                background-color #250b09
+                transition background-color .25s ease-out
 
     &__title
         background-repeat no-repeat
