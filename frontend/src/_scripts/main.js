@@ -70,3 +70,16 @@ $(function() {
     })
     console.log('Welcome to Yeogurt!');
 });
+
+$(function() {
+    $('ul.ui-faq li > a').click(function(){
+        if(!$(this).hasClass('active')){
+            $('ul.ui-faq li > a').removeClass('active').next('div').slideUp();
+            $(this).addClass('active');
+            $(this).next('div').slideDown(200);
+      } else {
+          $(this).removeClass('active').next('div').slideUp();	
+        }
+    });
+    console.log('Welcome to Yeogurt!');
+});
