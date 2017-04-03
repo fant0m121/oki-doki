@@ -1,0 +1,30 @@
+extends ../../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../../'
+
+block content
+    .ui-about
+        .grid.grid--container
+            .row
+                .col.col--xl-12
+                    .ui-page__header.ui-heading.ui-heading--lvl2.ui-heading--black ВАКАНСИИ
+            .row
+                .col.col--xl-6
+                    .ui-text-block
+                        .ui-text-block__title.ui-text-block__title--black Менеджер проектов (Офисные перегородки)
+                        .ui-text-block__text
+                            .ui-text-block__img
+                                img(src="/images/about/2.png")
+                            .ui-text-block__flex
+                                .col.col--xl-6.col--no-gutters
+                                    ul.ui-step-check.ui-step-check--bg Обязанности:
+                                .col.col--xl-6.col--no-gutters
+                                    ul.ui-step-check.ui-step-check--bg Качества:
+                .col.col--xl-6
+                    .ui-text-block
+                        .ui-text-block__title.ui-text-block__title--black Дизайнер/архитектор интерьера офисных помещений, конструктор систем офисных перегородок.
+                        .ui-text-block__text
+                            .ui-text-block__img
+                                img(src="/images/about/3.png")
