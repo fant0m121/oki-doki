@@ -1,0 +1,51 @@
+extends ../../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../../'
+
+block content
+    .ui-advantages
+        .grid.grid--container
+            .row
+                .col.col--xl-12
+                    .ui-page__header.ui-heading.ui-heading--lvl2.ui-heading--black СОБСТВЕННОЕ ПРОИЗВОДСТВО
+            .row.row--xl-center
+                .col.col--xl-8
+                    .grid
+                        .row
+                            .col.col--xl-6
+                                .ui-text-block
+                                    .ui-text-block__text 
+                                        .ui-text-block__img
+                                            img(src="/images/advantages/2.png", width="100%")
+                                        .ui-text-block__text-big #[br]Проектирование, производство, установка перегородок различного назначения (офисных и сантехнических) и любой конфигурации, а также комплектация офисов «под ключ» (офисной / мягкой мебелью и офисными аксессуарами) – специализация компании «ОКИ-ДОКИ».
+
+                            .col.col--xl-6
+                                .ui-text-block
+                                    .ui-text-block__text 
+                                        .ui-text-block__text-big  Работая более десятка лет на рынке систем офисных перегородок, мы понимаем важность и сложность выбора заказчиком хорошего поставщика этой продукции.
+                                        p
+                                            span #[br]Производство перегородок представляет собой сложнейший технологический процесс, 
+                                            требующий наличия качественных комплектующих, профессиональных навыков рабочего персонала и современного, качественного оборудования: различных станков и специализированного ручного инструмента, действенного контроля качества – все то, что как раз имеет наша компания.
+                                        p #[br]Достигнув превосходных результатов,
+                                            span мы все равно постоянно усовершенствуем наше производство, оперативно реагируя на изменения на рынке, появление новинок и выдвигаемых клиентами требований.
+                                            #[br]#[br]Проектирование и изготовление, а также монтаж перегородок из материалов высочайшего качества по индивидуальному заказу клиента (даже нестандартному) мы осуществляем в максимально сжатые сроки.
+                .col.col--xl-4
+                    .grid
+                        .row
+                            .col.col--xl-12
+                                .ui-form.ui-form-akcia.js-form-akcia
+                                    .ui-form-akcia__title Узнайте цену и сроки
+                                    input.ui-input(type="text", placeholder="Телефон")
+                                    input.ui-input(type="text", placeholder="Ваше имя")
+                                    input.ui-input(type="text", placeholder="E-mail")
+                                    input.ui-input(type="text", placeholder="Название организации")
+                                    textarea.ui-textarea(type="text", placeholder="Ваше сообщение")
+                                    .ui-form-akcia__line
+                                        a.ui-button.ui-button--size-xs Прикрепить файл
+                                        label (не обязательно)
+                                    a.ui-button.ui-button--size-lg.ui-button--default Расчитать стоимость
+                                    p Вы можете прикрепить любую информацию, которая может помочь нам при расчете
+                                
+                        

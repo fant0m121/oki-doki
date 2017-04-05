@@ -1,0 +1,49 @@
+extends ../../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../../'
+
+block content
+    .ui-advantages
+        .grid.grid--container
+            .row
+                .col.col--xl-12
+                    .ui-page__header.ui-heading.ui-heading--lvl2.ui-heading--black 13 ЛЕТ НА РЫНКЕ
+            .row.row--xl-center
+                .col.col--xl-8
+                    .grid
+                        .row
+                            .col.col--xl-6
+                                .ui-text-block
+                                    .ui-text-block__text 
+                                        .ui-text-block__img
+                                            img(src="/images/advantages/1.png", width="100%")
+                                        .ui-text-block__text-big #[br]Компания «ОКИ-ДОКИ» работает на российском рынке систем офисных перегородок 13 лет! Начало нашей деятельности практически совпало с возникновением в России рынка офисных перегородок! 
+                            .col.col--xl-6
+                                .ui-text-block
+                                    .ui-text-block__text 
+                                        p Прежде это современное решение оптимизации помещения офиса и создания благоприятной рабочей атмосферы для каждого сотрудника исключительно импортировалось. Сегодня объемы реализация перегородок российского производства уже превышает зарубежные.#[br]#[br]Конечно, при выборе офисных перегородок необходимо определиться со многими критериями – ценой, дизайном, качеством, материалом изготовления и конструкцией. #[br]#[br]Но прежде всего, требуется найти надежного поставщика.
+                                            span &nbsp Но как его выбрать среди сотни компаний и не поддаться пустым обещаниям «золотых гор»?
+                                        p #[br]Опыт! Верный признак надежного поставщика!
+                                            span &nbsp Не стоит доверять компаниям, которым не хватает опыта для ориентирования в сфере реализации перегородок.
+                                        p #[br]Они могут выпускать неплохую продукцию, однако в силу своей «молодости» не имеют возможности предложить хорошие условия, качественный сервис и дополнительные услуги, например, в виде комплектации офиса «под ключ».
+                                        span #[br]Обустройство вашего офиса по высшему разряду – наша задача!
+                .col.col--xl-4
+                    .grid
+                        .row
+                            .col.col--xl-12
+                                .ui-form.ui-form-akcia.js-form-akcia
+                                    .ui-form-akcia__title Узнайте цену и сроки
+                                    input.ui-input(type="text", placeholder="Телефон")
+                                    input.ui-input(type="text", placeholder="Ваше имя")
+                                    input.ui-input(type="text", placeholder="E-mail")
+                                    input.ui-input(type="text", placeholder="Название организации")
+                                    textarea.ui-textarea(type="text", placeholder="Ваше сообщение")
+                                    .ui-form-akcia__line
+                                        a.ui-button.ui-button--size-xs Прикрепить файл
+                                        label (не обязательно)
+                                    a.ui-button.ui-button--size-lg.ui-button--default Расчитать стоимость
+                                    p Вы можете прикрепить любую информацию, которая может помочь нам при расчете
+                        
+                        

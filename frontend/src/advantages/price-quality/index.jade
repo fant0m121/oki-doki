@@ -1,0 +1,48 @@
+extends ../../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../../'
+
+block content
+    .ui-advantages
+        .grid.grid--container
+            .row
+                .col.col--xl-12
+                    .ui-page__header.ui-heading.ui-heading--lvl2.ui-heading--black ЦЕНА / КАЧЕСТВО
+            .row.row--xl-center
+                .col.col--xl-8
+                    .grid
+                        .row
+                            .col.col--xl-6
+                                .ui-text-block
+                                    .ui-text-block__text 
+                                        .ui-text-block__img
+                                            img(src="/images/advantages/4.png", width="100%")
+                                        .ui-text-block__text-big #[br]Компания «ОКИ-ДОКИ» предлагает широкий диапазон цен – для заказчика с любым бюджетом мы воссоздадим благоприятное рабочее пространство.
+                            .col.col--xl-6
+                                .ui-text-block
+                                    .ui-text-block__text 
+                                        p
+                                            span Наверняка любой, приобретая продукцию, мечтает об идеальном соотношении цены / качество
+                                            , а именно: высокое качество / доступная цена. #[br]#[br]Компания «ОКИ-ДОКИ» много лет воплощает эту мечту любого заказчика.
+                                            span #[br]#[br]Высокое качество предлагаемых нами систем офисных перегородок гарантируется
+                                            , потому что приобретается самые высококачественные профили и материалы, продукция изготавливается профессионалами на высокотехнологичном оборудовании, действует жесткий контроль качества на каждом этапе их производства и монтажа. #[br]#[br]Отлаженное производство поспособствовало значительному снижению конечной стоимости офисных перегородок, например рациональное разделение труда и сведение к минимуму отходов при раскрое и распиле материала. #[br]#[br]Есть несколько факторов, влияющих на ценообразование продукции: используемые материалы для заполнения и профильная система (нами налажены прямые поставки с заводов-производителей), необходимость индивидуального дизайна, габариты конструкции, наличие открываний, сложности установки и др.
+                .col.col--xl-4
+                    .grid
+                        .row
+                            .col.col--xl-12
+                                .ui-form.ui-form-akcia.js-form-akcia
+                                    .ui-form-akcia__title Узнайте цену и сроки
+                                    input.ui-input(type="text", placeholder="Телефон")
+                                    input.ui-input(type="text", placeholder="Ваше имя")
+                                    input.ui-input(type="text", placeholder="E-mail")
+                                    input.ui-input(type="text", placeholder="Название организации")
+                                    textarea.ui-textarea(type="text", placeholder="Ваше сообщение")
+                                    .ui-form-akcia__line
+                                        a.ui-button.ui-button--size-xs Прикрепить файл
+                                        label (не обязательно)
+                                    a.ui-button.ui-button--size-lg.ui-button--default Расчитать стоимость
+                                    p Вы можете прикрепить любую информацию, которая может помочь нам при расчете
+                        
+                        
