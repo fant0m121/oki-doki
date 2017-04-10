@@ -7,7 +7,7 @@
     "DocumentFragment": true
   },
   "rules": {
-    "indent": [2, 2],
+    "indent": [2, 4],
     "valid-jsdoc": 0,
     "brace-style": [1, "stroustrup"],
     "no-constant-condition": 1,

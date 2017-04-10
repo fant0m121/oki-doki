@@ -9,17 +9,18 @@ block content
             .row
                 .col.col--xl-12
                     .ui-catalog-interactives__title Технологии офисного#[br] пространства
-            .row.row--xl-center
-                .col.col--xl-4
-                    .ui-product-cart-small
-                        .ui-product-cart-small__title.ui-product-cart-small__title--darkcoral Цельностеклянные#[br] перегородки
-                        .ui-product-cart-small__description Цельностеклянные перегородки имеют безрамную конструкцию и создают ощущение открытого пространства в вашем офисе
-                        .ui-product-cart-small__footer
-                            .ui-product-cart-small__price Цена от 3600 руб/м2
-                            .ui-product-cart-small__time Срок: от 10 дней
-                            .ui-product-cart-small__link
-                                a.ui-circle-button.ui-circle-button--red.ui-circle-button--size-md(href="#")
-                                    i +
+            .row
+                .col.col--xl-4.col--no-gutter-right
+                    .ui-catalog-interactives__product-cart
+                        .ui-product-cart-small
+                            .ui-product-cart-small__title.ui-product-cart-small__title--darkcoral Цельностеклянные#[br] перегородки
+                            .ui-product-cart-small__description Цельностеклянные перегородки имеют безрамную конструкцию и создают ощущение открытого пространства в вашем офисе
+                            .ui-product-cart-small__footer
+                                .ui-product-cart-small__price Цена от 3600 руб/м2
+                                .ui-product-cart-small__time Срок: от 10 дней
+                                .ui-product-cart-small__link
+                                    a.ui-circle-button.ui-circle-button--red.ui-circle-button--size-md(href="#")
+                                        i +
                 .col.col--xl-8
                     .ui-catalog-interactives__img
                         img(src="/images/catalog-interactives.png")
@@ -84,14 +85,14 @@ block content
                                 .ui-advantage__text Компания «ОКИ-ДОКИ» предлагает широкий диапазон цен – для заказчика с любым бюджетом мы воссоздадим благоприятное рабочее пространство.
                                 .ui-advantage__link
                                     a.ui-circle-button.ui-circle-button--red.ui-circle-button--size-md(href="/advantages/price-quality/")
-                                        i +                
+                                        i +
         .ui-our-production
             .grid.grid--container
                 .row
                     .col.col--xl-12
                         .ui-our-production__title Наша продукция
                 .row.row--no-gutters.ui-our-production__cart
-                    .col.col--xl-3.col--no-gutters
+                    .col.col--xl-4.col--no-gutters
                         .ui-our-production__product
                             .ui-product-cart-small.ui-product-cart-small--darkcoral
                                 .ui-product-cart-small__title.ui-product-cart-small__title--darkcoral Цельностеклянные#[br] перегородки
@@ -121,7 +122,7 @@ block content
                                     span ДСП, ЛДСП, стекло
                             .ui-our-production-specifications__button
                                 .ui-button.ui-button--default.ui-button--size-md Расчитать стоимость
-                .row
+                .row.ui-our-production__cart-mini
                     .col.col--xl-3
                         .ui-product-cart-mini.ui-product-cart-mini--selected(style="background-image: url('/images/product-cart-mini/celnostekljannye-peregorodki.png')")
                             .ui-product-cart-mini__info
@@ -146,7 +147,7 @@ block content
                                 .ui-product-cart-mini__title Входные группы
                                 .ui-product-cart-mini__price от 7000 руб/м2
                             a.ui-product-cart-mini__link.ui-quarter-button +
-                .row
+
                     .col.col--xl-3
                         .ui-product-cart-mini.ui-product-cart-mini--selected(style="background-image: url('/images/product-cart-mini/legkiye-ekonom-peregorodki.png')")
                             .ui-product-cart-mini__info

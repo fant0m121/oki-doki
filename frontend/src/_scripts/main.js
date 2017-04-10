@@ -8,7 +8,7 @@ require('owl.carousel');
 
 
 $(function() {
-    var owlProject =  $('.js-project-carousel');
+    var owlProject = $('.js-project-carousel');
     owlProject.owlCarousel({
         items: 1,
         loop: true,
@@ -23,13 +23,12 @@ $(function() {
         owlProject.trigger('prev.owl.carousel');
     });
     owlProject.on('changed.owl.carousel', function(event) {
-        console.log(event.item.index);
         $('.js-project-carousel-number').text(event.item.index - 1);
     });
 });
 
 $(function() {
-    var owlCustomer =  $('.js-configuration-carousel');
+    var owlCustomer = $('.js-configuration-carousel');
     owlCustomer.owlCarousel({
         items: 3,
         loop: true,
@@ -45,13 +44,12 @@ $(function() {
         owlCustomer.trigger('prev.owl.carousel');
     });
     owlCustomer.on('changed.owl.carousel', function(event) {
-        console.log(event.item.index);
         $('.js-configuration-carousel-number').text(event.item.index - 2);
     });
 });
 
 $(function() {
-    var owlCustomer =  $('.js-customer-reviews-carousel');
+    var owlCustomer = $('.js-customer-reviews-carousel');
     owlCustomer.owlCarousel({
         items: 4,
         loop: true,
@@ -69,14 +67,16 @@ $(function() {
 });
 
 $(function() {
-    $('.js-faq-item').on('click', function(){
-        if(!$(this).hasClass('active')){
+    $('.ui-px-overlay').css({height: document.body.clientHeight});
+    $('.js-faq-item').on('click', function() {
+        if (!$(this).hasClass('active')) {
             $('.js-faq-item').removeClass('active').next('div').slideUp();
             $('.js-faq-item').find('span').text('+');
             $(this).addClass('active').find('span').text('-');
             $(this).next('div').slideDown(200);
-      } else {
-            $(this).removeClass('active').next('div').slideUp();	
+        }
+        else {
+            $(this).removeClass('active').next('div').slideUp();
             $(this).find('span').text('+');
         }
     });

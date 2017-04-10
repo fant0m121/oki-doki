@@ -108,20 +108,22 @@ init($breakpoints, $columns)
     font-size 16px
     line-height 32px
     padding-right 40px
-    justify-content space-between
 
     a
         color #050505
         text-decoration none
         display block
-        padding 9px 0 5px
-        border-bottom 3px solid rgba(255,255,255,0)
+        padding 12px 4px 3px
+        border-bottom 3px solid rgba(255, 255, 255, 0)
 
     &__link
         &:hover
             color #439fac
             border-bottom 3px solid #439fac
             cursor pointer
+
+    &__item + &__item
+        margin-left 44px
 
 .ui-footer-menu
     font-family 'Panton'
@@ -150,8 +152,8 @@ init($breakpoints, $columns)
     font-size 12px
 
 .ui-configuration
-    background #fff url('/images/baffle-bg.png') no-repeat 50% 0
-    padding 40px 0
+    background #fff url('../images/baffle-bg.png') no-repeat 50% 0
+    padding 47px 0 0
 
     &__header
         padding-bottom 25px
@@ -181,14 +183,14 @@ init($breakpoints, $columns)
         font-weight bold
         color #1b1b1b
         line-height 27px
-        padding 19px 60px 19px 19px
+        padding 13px 60px 16px 30px
 
 .ui-project-home
-    background #fff url('/images/project-home-bg.jpg') no-repeat 50% 0
+    background #fff url('../images/project-home-bg.jpg') no-repeat 50% 0
     padding-bottom 30px
 
     &__header
-        padding 40px 0 25px
+        padding 33px 0 19px
 
     &__content
         height 387px
@@ -253,13 +255,13 @@ init($breakpoints, $columns)
     color #313131
 
     &__header
-        padding 40px 0 25px
+        padding 24px 0 31px
 
     &__text
         padding 50px 0 44px
 
 .ui-customer-reviews
-    background #fff url('/images/customer-reviews-bg.png') no-repeat 50% 0
+    background #fff url('../images/customer-reviews-bg.png') no-repeat 50% 0
     padding 40px 0
 
     &__content
@@ -314,7 +316,7 @@ init($breakpoints, $columns)
         display flex
         justify-content center
         align-items center
-        background url('/images/clients-line-bg.png') no-repeat
+        background url('../images/clients-line-bg.png') no-repeat
         height 121px
         padding-left 10px
 
@@ -377,7 +379,7 @@ init($breakpoints, $columns)
         font-size 16px
 
 .ui-order
-    padding 50px 0 50px
+    padding 58px 0 112px
 
     ul
         list-style none
@@ -491,7 +493,7 @@ init($breakpoints, $columns)
 
 .ui-advantage
     display block
-    margin-top 60px
+    margin-top 65px
 
     & .col
         transition width .2s ease
@@ -502,7 +504,7 @@ init($breakpoints, $columns)
             flex none
 
             & ^[0]__content
-                padding 17px 79px 17px 42px
+                padding 11px 96px 14px 33px
                 width 100%
                 height auto
                 visibility visible
@@ -542,7 +544,7 @@ init($breakpoints, $columns)
         display flex
         flex-direction column
         align-items center
-        padding 7px 40px 7px 42px
+        padding 9px 39px 1px 43px
         border-right 2px solid transparent
 
     &__icon
@@ -580,25 +582,26 @@ init($breakpoints, $columns)
 
     &__title
         padding-top 15px
+        line-height 1
 
 .ui-our-production
-    padding 60px 15px
-    margin 0 auto
+    padding 50px 0 65px
 
     &__title
         font-family 'Panton'
         font-size 60px
         color $color-medium
         line-height 70px
-        padding-bottom 30px
 
     &__product
-        margin 45px 0
+        margin 44px 0
+        display flex
+        height calc(100% - 88px)
 
     &__variation
         flex 1
         position relative
-        margin 45px 0
+        margin 44px 0
         background-size cover
 
     &__navigation
@@ -614,6 +617,9 @@ init($breakpoints, $columns)
         box-shadow 0px 3px 5px 0px rgba(0, 0, 0, 0.2)
         max-width 300px
 
+    &__cart-mini
+        padding 50px 0 0
+
 .ui-our-production-specifications
     font-family 'Panton'
     font-size 20px
@@ -628,26 +634,25 @@ init($breakpoints, $columns)
         color #1b1b1b
         line-height 32px
         padding-bottom 48px
-        padding 30px 55px
+        padding 33px 42px 30px 42px
 
     &__content
-        padding 10px 55px
+        padding 10px 46px
         flex 1
 
     &__text + &__text
-        margin-top 30px
+        margin-top 23px
 
     &__text
-
         span
             font-size 16px
 
     &__button
-        padding 30px 20px
+        padding 18px 21px 34px 20px
 
 .ui-catalog-interactives
-    background url('/images/catalog-interactives-bg.png') no-repeat 50% 50%
-    padding-top 60px
+    background url('../images/catalog-interactives-bg.png') no-repeat 50% 50%
+    padding-top 45px
 
     &__title
         font-family 'Panton'
@@ -655,9 +660,13 @@ init($breakpoints, $columns)
         color #1c282a
         line-height 70px
         font-weight bold
+        text-transform uppercase
+
+    &__product-cart
+        padding-top 82px
 
 .ui-main-home
-    background url('/images/main-home-bg.png') no-repeat 50% 50%
+    background url('../images/main-home-bg.png') no-repeat 50% 50%
 
 .ui-catalog
 
@@ -884,6 +893,7 @@ init($breakpoints, $columns)
 
 .ui-marker
     display flex
+    position absolute
 
     &__title
         background #171717
@@ -892,3 +902,29 @@ init($breakpoints, $columns)
         border-radius 2px
         height 30px
         margin 2px -10px
+
+    &--piter
+        left 12%
+        top 25%
+
+    &--moscow
+        left 20%
+        top 45%
+
+    &--yar
+        left 35%
+        top 28%
+
+    &--samara
+        left 42%
+        top 55%
+
+.ui-px-overlay
+    position absolute
+    width 100%
+    height 100%
+    background url('../images/home-layout.jpg')
+    opacity .5
+    background-position: -10px -6px;
+    z-index 1000
+    display none
