@@ -34,7 +34,15 @@ $(function() {
         loop: true,
         autoplay: true,
         dots: false,
-        margin: 30
+        margin: 30,
+        responsive : {
+            0: {
+                items: 1
+            },
+            1200: {
+                items: 3
+            }
+        }
     });
 
     $('.js-configuration-carousel-next').on('click', function() {
@@ -49,20 +57,28 @@ $(function() {
 });
 
 $(function() {
-    var owlCustomer = $('.js-customer-reviews-carousel');
-    owlCustomer.owlCarousel({
+    var owlReviews = $('.js-customer-reviews-carousel');
+    owlReviews.owlCarousel({
         items: 4,
         loop: true,
         autoplay: true,
         dots: false,
-        margin: 30
+        margin: 30,
+        responsive : {
+            0: {
+                items: 2
+            },
+            1200: {
+                items: 4
+            }
+        }
     });
 
     $('.js-customer-reviews-carousel-next').on('click', function() {
-        owlCustomer.trigger('next.owl.carousel');
+        owlReviews.trigger('next.owl.carousel');
     });
     $('.js-customer-reviews-carousel-prew').on('click', function() {
-        owlCustomer.trigger('prev.owl.carousel');
+        owlReviews.trigger('prev.owl.carousel');
     });
 });
 
