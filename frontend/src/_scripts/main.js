@@ -28,6 +28,23 @@ $(function() {
 });
 
 $(function() {
+    var owlProject = $('.js-works-carousel');
+    owlProject.owlCarousel({
+        items: 1,
+        loop: true,
+        autoplay: true,
+        dots: false
+    });
+
+    $('.js-works-carousel-next').on('click', function() {
+        owlProject.trigger('next.owl.carousel');
+    });
+    $('.js-works-carousel-prev').on('click', function() {
+        owlProject.trigger('prev.owl.carousel');
+    });
+});
+
+$(function() {
     var owlCustomer = $('.js-configuration-carousel');
     owlCustomer.owlCarousel({
         items: 3,

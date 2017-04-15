@@ -1,0 +1,312 @@
+extends ../../_layouts/base
+
+block config
+    //- Correct base url pathing for this page
+    - var baseUrl = '../../'
+
+block content
+    .ui-catalog-detail
+        .grid.grid--container
+            .row
+                .col.col--xl-12
+                    h1.ui-page__header.ui-heading.ui-heading--lvl2.ui-heading--black ЦельноСтеклянные перегородки
+            .row
+                .col.col--xl-4
+                    .ui-catalog-detail-info
+                        .ui-catalog-detail-info__header
+                            .ui-catalog-detail-info__title Технические характеристики
+                            .ui-catalog-detail-info__params
+                                .grid
+                                    .row
+                                        .col.col--xl-6.col--no-gutter-right
+                                            .ui-catalog-detail-info__param
+                                                i
+                                                    svg(xmlns="http://www.w3.org/2000/svg", viewBox="0 0 21.92 21.92", width="27", height="27")
+                                                        rect(x="0.75", y="0.75", width="20.42", height="20.42", fill="none", stroke="#fff", stroke-miterlimit="10", stroke-width="1.5px")
+                                                        polygon(fill="#fff", points="13.82 4.29 17.78 4.28 17.77 8.23 13.82 4.29")
+                                                        rect(fill="#fff", x="11.44", y="4.12", width="1.42", height="8.58", transform="translate(10.25 -5.38) rotate(45)")
+                                                        polygon(fill="#fff", points="8.13 17.87 4.17 17.88 4.19 13.92 8.13 17.87")
+                                                        rect(fill="#fff", x="7.6", y="7.96", width="1.42", height="8.58", transform="translate(6.27 27.53) rotate(-135)")
+
+                                                span Высота - до 2 000мм #[br] Ширина - 32 мм
+                                        .col.col--xl-6
+                                            .ui-catalog-detail-info__param
+                                                i
+                                                    svg(xmlns="http://www.w3.org/2000/svg", viewBox="0 0 79.82 75.55", width="25", height="25")
+                                                        polygon(fill="none", stroke="#fff", stroke-miterlimit="10", stroke-width="5px", points="76.64 73.05 3.16 73.05 12.96 31.8 66.84 31.8 76.64 73.05")
+                                                        polygon(fill="none", stroke="#fff", stroke-miterlimit="10", stroke-width="5px", points="1.61 1.92 16.82 14.65 63.23 14.65 78.19 1.92")
+                                                        rect(fill="#fff", x="38.35", y="14.65", width="4.57", height="17.14")
+                                                        path(fill="#fff", d="M32.56,46.25v5.3H33l3.34-5.3H41.2L36.31,52c1.58,0.3,2.56,1.74,3.34,3.67a39.79,39.79,0,0,0,1.6,3.92H36.94a19.28,19.28,0,0,1-1.2-2.94c-0.6-1.52-1.41-2.34-2.77-2.34H32.56v5.28H28.45V46.25h4.11Z" transform="translate(-0.39 -0.47)")
+                                                        path(fill="#fff", d="M52.14,46.25v3.21H47V59.55H42.84V46.25h9.3Z" transform="translate(-0.39 -0.47)")
+                                                span от 15 кг/шт
+                                                
+                    .ui-catalog-detail-variants
+                        .ui-catalog-detail-variants__header Варианты заполнения
+                        .ui-catalog-detail-variants__list
+                            .grid
+                                .row
+                                    .col.col--xl-4.col--xl-align-center.ui-catalog-detail-variants__item
+                                        span Матовое стекло
+                                    .col.col--xl-4.col--xl-align-center.ui-catalog-detail-variants__item
+                                        span Прозрачное стекло
+                                    .col.col--xl-4.col--xl-align-center.ui-catalog-detail-variants__item
+                                        span Тонированное стекло
+                        .ui-catalog-detail-variants__content
+                            .grid
+                                .row
+                                    .col.col--xl-6.col--xl-align-center
+                                        .ui-catalog-detail-variants__price от 3600 руб/м2
+                                    .col.col--xl-6.ui-catalog-detail-variants__button
+                                        a.ui-button.ui-button--size-lg.ui-button--block.ui-button--black Заказать
+                                .row
+                                    .col.col--xl-12.ui-catalog-detail-variants__footer
+                                        .ui-catalog-detail-variants__icon !
+                                        .grid
+                                            .row
+                                                .col.col--xl-12.ui-catalog-detail-variants__total Итоговая цена зависит от:
+                                            .row
+                                                .col.col--xl-4
+                                                    span 
+                                                        i +
+                                                        div объема
+                                                .col.col--xl-4
+                                                    span 
+                                                        i +
+                                                        div материалов
+                                                .col.col--xl-4
+                                                    span 
+                                                        i +
+                                                        div количества поворотных элементов
+
+                .col.col--xl-6
+                    .ui-catalog-detail__image
+                        img.ui-image.ui-image--responsive(src="/images/catalog/mobile/model-main.png", alt="")
+                .col.col--xl-2.col--xs-align-center
+                    .ui-catalog-detail__models
+                        .ui-product-model
+                            .grid.grid--no-gutters
+                                .row.row--no-gutters
+                                    .col.col--xl-6.col--no-gutters
+                                        img.ui-image.ui-image--responsive(src="/images/catalog/mobile/model-main.png", alt="")
+                                    .col.col--xl-6.col--no-gutters.col--xs-align-center.ui-product-model__name Модель 1
+                        .ui-product-model.ui-product-model--active
+                            .grid.grid--no-gutters
+                                .row.row--no-gutters
+                                    .col.col--xl-6.col--no-gutters
+                                        img.ui-image.ui-image--responsive(src="/images/catalog/mobile/model-main.png", alt="")
+                                    .col.col--xl-6.col--no-gutters.col--xs-align-center.ui-product-model__name Модель 1
+                        .ui-product-model
+                            .grid.grid--no-gutters
+                                .row.row--no-gutters
+                                    .col.col--xl-6.col--no-gutters.ui-product-model__image
+                                        img.ui-image.ui-image--responsive(src="/images/catalog/mobile/model-main.png", alt="")
+                                    .col.col--xl-6.col--no-gutters.col--xs-align-center.ui-product-model__name Модель 1
+    
+    .grid.grid--container.ui-catalog-seo
+        .row
+            .col.col--xl-12.ui-catalog-seo__heading
+                h2.ui-heading.ui-heading--lvl4.ui-heading--black Описание
+        .row
+            .col.col--xl-auto.ui-catalog-seo__text
+                p Стационарные перегородки Oki-Doki Ice - это утонченное сочетание Легкости и света. Стационарные перегородки Oki-Doki Ice - это утонченное сочетание Легкости и света. Стационарные перегородки Oki-Doki Ice - это утонченное сочетание Легкости и света. Стационарные перегородки Oki-Doki Ice - это утонченное сочетание Легкости и света. 
+                p Данная система перегородок не содержит каркаса, для крепления стёкол используется элегантные решения утонченных профилей. 
+                p Надежность,  прочность и эстетичность конструкции  - главное и неоспоримое преимущество перегородок Oki-Doki Ice.
+                p Стационарные перегородки Oki-Doki Ice - это утонченное сочетание Легкости и света. 
+                p Данная система перегородок не содержит каркаса, для крепления стёкол используется элегантные решения утонченных профилей. 
+                p Надежность,  прочность и эстетичность конструкции  - главное и неоспоримое преимущество перегородок Oki-Doki Ice.
+                p Стационарные перегородки Oki-Doki Ice - это утонченное сочетание Легкости и света. 
+                p Данная система перегородок не содержит каркаса, для крепления стёкол используется элегантные решения утонченных профилей. 
+                p Надежность,  прочность и эстетичность конструкции  - главное и неоспоримое преимущество перегородок Oki-Doki Ice.
+            .col.col--xl-auto
+                a.ui-icon-button.ui-icon-button--size-lg.ui-icon-button--black
+                    .ui-icon-button__icon 
+                        svg(xmlns="http://www.w3.org/2000/svg", xmlns:xlink="http://www.w3.org/1999/xlink", width="16px", height="8px")
+                            path(fill-rule="evenodd",  fill="rgb(249, 249, 249)", d="M8.000,7.998 L-0.001,0.001 L16.000,0.001 L8.000,7.998 Z")
+                    .ui-icon-button__text Смотреть подробнее
+
+    .ui-price-calculate.grid.grid--container
+        .row
+            .col.col--xl-12
+                .grid
+                    form.row.row--no-gutters.ui-form.ui-form-calcalate.ui-form--red
+                        .col.col--xl-3.ui-form-calcalate__header
+                            .ui-form-calcalate__title Оставить заявку
+                            .ui-form-calcalate__description Оставьте заявку на расчет стоимости и мы свяжемся с вами в ближайшее время
+                        .col.col--xl-9
+                            .ui-form-calcalate__content
+                                .grid
+                                    .row
+                                        .col.col--xl-4
+                                            input.ui-input.ui-input--block(type="text", placeholder="Контактное лицо")
+                                        .col.col--xl-4
+                                            input.ui-input.ui-input--block(type="text", placeholder="Телефон")
+                                        .col.col--xl-4
+                                            a.ui-button.ui-button--size-lg.ui-button--block.ui-button--black Расчитать стоимость
+                                .ui-form-calcalate__about 
+                                    .ui-form-calcalate__icon !
+                                    .ui-form-calcalate__text Итоговая цена зависит от: #[br] объем, материалов, количества поворотных элементов
+
+    .ui-works
+        .grid.grid--container
+            .row
+                .col.col--xl-12
+                    .ui-works__header.ui-heading.ui-heading--black.ui-heading--lvl3 Примеры работ
+                    
+            .row.ui-product-works
+                .ui-product-works__nav
+                    a.ui-button.ui-product-works__prev.js-works-carousel-prev #{'<'} Назад
+                    a.ui-button.ui-product-works__next.js-works-carousel-next Далее #{'>'}
+                .col.col--xl-12.owl-carousel.owl-theme.js-works-carousel
+                    .grid
+                        .row.row--no-gutters
+                            .col.col--xl-8.col--no-gutters(style="padding: 29px 0")
+                                .ui-product-works__image(style="background-image: url(/images/celnostekljannye-peregorodki-bg-1.png)")
+                            .col.col--xl-4.col--no-gutters.ui-product-works__content
+                                .ui-product-works__title Название заказчика
+                                .ui-product-works__text Краткое описание:
+                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    | Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                    
+                    .grid
+                        .row.row--no-gutters
+                            .col.col--xl-8.col--no-gutters(style="padding: 25px 0")
+                                .ui-product-works__image(style="background-image: url(/images/celnostekljannye-peregorodki-bg-1.png)")
+                            .col.col--xl-4.col--no-gutters.ui-product-works__content
+                                .ui-product-works__title Название заказчика
+                                .ui-product-works__text Краткое описание:
+                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    | Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+
+    .ui-configuration
+        .grid.grid--container
+            .row
+                .col.col--xl-12
+                    .ui-configuration__header.ui-heading.ui-heading--white.ui-heading--lvl2 Конфигурации
+            .row
+                .col.col--xl-12.owl-carousel.owl-theme.js-configuration-carousel
+                    .ui-product-configuration
+                        .ui-product-configuration__header Входные группы
+                        .grid.grid--no-gutters
+                            .row.row--no-gutters
+                                .col.col--xl-6.col--no-gutters
+                                    .ui-product-configuration__description
+                                        p Рабочие места на основе мобильных перегородок – комбинация нескольких модулей, которые соединяются с помощью специального крепежа. Габариты конструкций могут быть разные: ширина – от 45 до 120 см, высота – от 70 до 210 см.
+                                    .ui-product-configuration__footer Подробнее
+                                        .ui-product-configuration__link
+                                            a.ui-circle-button.ui-circle-button--black.ui-circle-button--size-md(href="#")
+                                                i +
+                                .col.col--xl-6.col--no-gutters.ui-product-configuration__photo(style="background-image: url('/images/сonfigurations/1.png')")
+                        
+                    .ui-product-configuration
+                        .ui-product-configuration__header Входные группы
+                        .grid.grid--no-gutters
+                            .row.row--no-gutters
+                                .col.col--xl-6.col--no-gutters
+                                    .ui-product-configuration__description
+                                        p Рабочие места на основе мобильных перегородок – комбинация нескольких модулей, которые соединяются с помощью специального крепежа. Габариты конструкций могут быть разные: ширина – от 45 до 120 см, высота – от 70 до 210 см.
+                                    .ui-product-configuration__footer Подробнее
+                                        .ui-product-configuration__link
+                                            a.ui-circle-button.ui-circle-button--black.ui-circle-button--size-md(href="#")
+                                                i +
+                                .col.col--xl-6.col--no-gutters.ui-product-configuration__photo(style="background-image: url('/images/сonfigurations/1.png')")
+                    .ui-product-configuration
+                        .ui-product-configuration__header Входные группы
+                        .grid.grid--no-gutters
+                            .row.row--no-gutters
+                                .col.col--xl-6.col--no-gutters
+                                    .ui-product-configuration__description
+                                        p Рабочие места на основе мобильных перегородок – комбинация нескольких модулей, которые соединяются с помощью специального крепежа. Габариты конструкций могут быть разные: ширина – от 45 до 120 см, высота – от 70 до 210 см.
+                                    .ui-product-configuration__footer Подробнее
+                                        .ui-product-configuration__link
+                                            a.ui-circle-button.ui-circle-button--black.ui-circle-button--size-md(href="#")
+                                                i +
+                                .col.col--xl-6.col--no-gutters.ui-product-configuration__photo(style="background-image: url('/images/сonfigurations/1.png')")
+                    .ui-product-configuration
+                        .ui-product-configuration__header Входные группы
+                        .grid.grid--no-gutters
+                            .row.row--no-gutters
+                                .col.col--xl-6.col--no-gutters
+                                    .ui-product-configuration__description
+                                        p Рабочие места на основе мобильных перегородок – комбинация нескольких модулей, которые соединяются с помощью специального крепежа. Габариты конструкций могут быть разные: ширина – от 45 до 120 см, высота – от 70 до 210 см.
+                                    .ui-product-configuration__footer Подробнее
+                                        .ui-product-configuration__link
+                                            a.ui-circle-button.ui-circle-button--black.ui-circle-button--size-md(href="#")
+                                                i +
+                                .col.col--xl-6.col--no-gutters.ui-product-configuration__photo(style="background-image: url('/images/сonfigurations/1.png')")
+    .ui-order
+        .grid.grid--container
+            .row.row--xl-center
+                .col.col--xl-4
+                    .ui-order__title Сделать заказ просто:
+                .col.col--xl-8.col--xl-align-middle.col--xl-flex
+                    .ui-order__step
+                        .ui-step
+                            .ui-step__first 
+                                img(src="/images/icons/order-step-1.png", alt="", height="51", width="61")
+                                .ui-step__title Вы отправляете заявку
+                        .ui-step
+                            .ui-step__center 
+                                img(src="/images/icons/order-step-2.png", alt="", height="57", width="57")
+                                .ui-step__title Согласовываем #[br]дизайн-проект
+                        .ui-step
+                            .ui-step__last 
+                                img(src="/images/icons/order-step-3.png", alt="", height="54", width="54")
+                                .ui-step__title Производим #[br]монтаж и установку
+    .ui-customer-reviews
+        .grid.grid--container
+            .row
+                .col.col--xl-4
+                    .ui-customer-reviews__header.ui-heading.ui-heading--white.ui-heading--lvl2 Отзывы клиентов
+                    .ui-slider-nav.ui-slider-nav__no-number
+                        a.ui-slider-nav__arrow.js-customer-reviews-carousel-prew
+                            img(src="/images/icons/arrow-left.svg", alt="", height="47", width="16")
+                        a.ui-slider-nav__arrow.js-customer-reviews-carousel-next
+                            img(src="/images/icons/arrow-rigth.svg", alt="", height="47", width="16")
+                .col.col--xl-8.owl-carousel.owl-theme.js-customer-reviews-carousel
+                    .ui-customer-reviews__content
+                        .ui-customer-reviews__photo(style="background-image: url('/images/customer-reviews/asteros-logo.png')")
+                        .ui-customer-reviews__title ООО «Астерос #[br]сервис»
+                        .ui-customer-reviews__link
+                            a.ui-circle-button.ui-circle-button--red.ui-circle-button--size-md(href="#")
+                                i +
+                    .ui-customer-reviews__content
+                        .ui-customer-reviews__photo(style="background-image: url('/images/customer-reviews/coral-logo.png')")
+                        .ui-customer-reviews__title ООО «Корал#[br] тревел»
+                        .ui-customer-reviews__link
+                            a.ui-circle-button.ui-circle-button--red.ui-circle-button--size-md(href="#")
+                                i +
+                    .ui-customer-reviews__content
+                        .ui-customer-reviews__photo(style="background-image: url('/images/customer-reviews/m-logistic-logo.png')")
+                        .ui-customer-reviews__title ООО «М-Логистик#[br] Компани»
+                        .ui-customer-reviews__link
+                            a.ui-circle-button.ui-circle-button--red.ui-circle-button--size-md(href="#")
+                                i +
+                    .ui-customer-reviews__content
+                        .ui-customer-reviews__photo(style="background-image: url('/images/customer-reviews/swsoft-logo.png')")
+                        .ui-customer-reviews__title ООО «СВсофт #[br] МФТИ»
+                        .ui-customer-reviews__link
+                            a.ui-circle-button.ui-circle-button--red.ui-circle-button--size-md(href="#")
+                                i +
+                                
+    .ui-companies
+        .grid.grid--container
+            .row.row--xl-center
+                .col.col--xl-12
+                    .ui-companies__header Нас выбирают
+            .row.row--xl-center.ui-companies-list
+                .col.col--xl-4.col--no-gutters 
+                    .ui-companies__title С нами работает 
+                        span более 5000 
+                        |#{' '} компаний
+                .col.col--xl-2
+                    .ui-companies__element.ui-companies__element-first
+                        img(src="/images/companies/resch-logo.png")
+                .col.col--xl-2
+                    .ui-companies__element
+                        img(src="/images/companies/rgd-logo.png")
+                .col.col--xl-2
+                    .ui-companies__element
+                        img(src="/images/companies/nord-strean-logo.png")
+                .col.col--xl-2
+                    .ui-companies__element
+                        img(src="/images/companies/viscom.png")

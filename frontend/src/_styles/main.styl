@@ -743,7 +743,8 @@ init($breakpoints, $columns)
         padding 15px 0
 
 .ui-price-calculate
-    padding 44px 0
+    padding-top 44px
+    padding-bottom 44px
 
 .ui-configurations
     padding-bottom 50px
@@ -1009,6 +1010,9 @@ init($breakpoints, $columns)
         left 42%
         top 55%
 
+.ui-image
+    &--responsive
+        max-width 100%
 .ui-px-overlay
     position absolute
     width 100%
@@ -1018,3 +1022,5 @@ init($breakpoints, $columns)
     background-position: -10px -6px;
     z-index 1000
     display none
+
+@import 'catalog-detail';
