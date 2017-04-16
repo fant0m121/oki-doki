@@ -231,18 +231,25 @@ block content
                         .ui-text-block__text 
                             .ui-text-block__text-average Прозрачное наполнение
                             |#{' '} #[br] Прозрачная часть, как и в мобильных перегородках, так и в стационарных может быть одинарной, двойной и двойной с межрамными жалюзи. Строго говоря, может использоваться любой прозрачный, полу- и непрозрачный материал толщиной — 4–6 мм.
-            .row.ui-materials__line
-                .col.col--xl-12
-                    form.ui-form.ui-form-calcalate
-                        .ui-form-calcalate__header
+
+    .ui-price-calculate.grid.grid--container
+        .row
+            .col.col--xl-12
+                .grid
+                    form.row.row--no-gutters.ui-form.ui-form-calcalate
+                        .col.col--xl-3.ui-form-calcalate__header
                             .ui-form-calcalate__title Получить консультацию
                             .ui-form-calcalate__description Оставьте заявку на консультацию и мы свяжемся с вами в ближайшее время
                         .col.col--xl-9
                             .ui-form-calcalate__content
-                                .ui-form-calcalate__layout
-                                    input.ui-input(type="text", placeholder="Контактное лицо")
-                                    input.ui-input(type="text", placeholder="Телефон")
-                                    a.ui-button.ui-button--size-lg.ui-button--default Отправить
+                                .grid
+                                    .row
+                                        .col.col--xl-4
+                                            input.ui-input.ui-input--block(type="text", placeholder="Контактное лицо")
+                                        .col.col--xl-4
+                                            input.ui-input.ui-input--block(type="text", placeholder="Телефон")
+                                        .col.col--xl-4
+                                            a.ui-button.ui-button--size-lg.ui-button--block.ui-button--default Отправить
                                 .ui-form-calcalate__about 
                                     .ui-form-calcalate__icon !
                                     .ui-form-calcalate__text Итоговая цена зависит от : #[br] объем, материалов, количества поворотных элементов
