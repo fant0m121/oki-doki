@@ -1,0 +1,255 @@
+.ui-catalog-detail
+    background #f1f1f1 url('../images/catalog/mobile/main-bg.png') no-repeat top center
+    padding-bottom 105px
+
+    &__models
+        display block
+
+    &__image
+        text-align center
+        background linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0) 6%, #fff 6%, #fff 94%, rgba(255, 255, 255, 0) 94%, rgba(255, 255, 255, 0) 100%)
+
+.ui-catalog-detail-info
+
+    &__header
+        background $color-bondiblue
+        color #fff
+        padding-left 15px
+        padding-right 15px
+
+    &__title
+        font-size 26px
+        font-weight bold
+        border-bottom 2px solid
+        padding 15px 0
+
+    &__params
+        padding 20px 0
+        font-size 16px
+        line-height 20px
+
+    &__param
+        display flex
+        align-items center
+
+        i
+            display flex
+            width 58px
+            height 58px
+            border-radius 50%
+            align-items center
+            justify-content center
+            border 2px solid #fff
+
+        span
+            padding-left 15px
+            font-size 16px
+
+.ui-catalog-detail-variants
+    margin-top 15px
+    padding-left 15px
+    padding-right 15px
+    background #fff
+    padding-bottom 15px
+
+    &__header
+        font-size 26px
+        font-weight bold
+        padding 15px 0
+
+    &__list
+        padding-bottom 15px
+
+        span
+            display inline-block
+            font-size 16px
+            font-weight bold
+            padding-top 12px
+            padding-bottom 12px
+
+    &__item + &__item
+        border-left 1px solid #d4d4d4
+
+    &__content
+        background #e5e5e5
+        padding 12px
+
+    &__price
+        font-size 26px
+        font-weight bold
+        padding-bottom 12px
+
+    &__button
+        padding-bottom 12px
+
+    &__footer
+        color #5c5c5c
+        display flex
+        padding-top 15px
+        border-top 1px solid #5c5c5c
+
+        .grid
+            flex 1
+            margin-left 10px
+
+        span
+            display flex
+            font-size 14px
+            font-family $font-rubik
+
+            i
+                padding-right 10px
+                font-style normal
+
+    &__total
+        line-height 31px
+        font-size 20px
+        font-weight bold
+
+    &__icon
+        border 1px solid #5c5c5c
+        border-radius 50%
+        width 31px
+        height 31px
+        display flex
+        align-items center
+        justify-content center
+        font-size 18px
+        color #5c5c5c
+        flex-basis 31px
+
+.ui-catalog-seo
+    margin-top -60px
+    box-shadow 0px 3px 10px 0px rgba(0, 0, 0, .1)
+
+    &__heading
+        padding-top 28px
+        padding-bottom 28px
+        background #fff
+
+    &__text
+        font-size 16px
+        line-height 20px
+        max-height 81px
+        overflow hidden
+        transition max-height .2s ease
+        flex 1
+
+        &--opened
+            max-height 1200px
+
+.ui-product-model
+    background-color #fff
+    box-shadow 0px 3px 21px 0px rgba(0, 0, 0, 0.1)
+    color $color-dark
+    cursor pointer
+
+    &__image
+        text-align center
+
+    &__name
+        font-family $font-rubik
+        text-align center
+        font-size 14px
+
+    &--active
+        background $color-bondiblue
+        color #fff
+
+
+.ui-product-model + .ui-product-model
+    margin-top 12px
+
+.ui-works
+    padding-bottom 75px
+
+    &__header
+        padding-bottom 30px
+
+.ui-product-works
+    position relative
+
+    &__title
+        font-size 26px
+        font-weight bold
+        padding 15px
+        background #525252
+        color #fff
+
+    &__image
+        position relative
+        height 100%
+        background-position 50% 50%
+        background-repeat no-repeat
+        background-size cover
+        min-height 340px
+
+    &__text
+        line-height 26px
+        padding 15px
+
+    &__content
+        box-shadow 0px 3px 21px 0px rgba(0, 0, 0, .1)
+
+    &__nav
+        position absolute
+        bottom 0
+        left 15px
+        z-index 11
+        display flex
+
+        a
+            font-size 16px
+            font-weight bold
+            display block
+            width 250px
+            text-align center
+            padding 19px 15px 20px
+            text-transform uppercase
+    &__next
+        color #212121
+        background #e5e5e5
+
+        &:hover
+            color #212121
+
+    &__prev
+        color #fff
+        background #1e1e1e
+
+        &:hover
+            color #fff
+
+.ui-product-configuration
+    background #fff
+
+    &__header
+        color #fff
+        font-size 20px
+        font-family 'Panton'
+        font-weight bold
+        background $color-darkcoral
+        line-height 1
+        padding 24px 23px
+
+    &__description
+        padding 20px 15px 20px 23px
+        font-size 16px
+        color #000
+        line-height 26px
+        max-height 125px
+        overflow hidden
+
+    &__footer
+        padding 15px 54px 15px 23px
+        font-size 20px
+        font-family 'Panton'
+        font-weight bold
+        position relative
+
+    &__link
+        position absolute
+        width 54px
+        height 54px
+        right 0
+        bottom 0

@@ -222,14 +222,15 @@ block content
                     .ui-contact__phone #[br]8-800-700-21-28
             .row.ui-contact__form
                 .col.col--xl-8
-                    form.ui-form.ui-form-request
-                        .ui-form-request__header
-                            .ui-form-request__title Пишите нам
-                            .ui-form-request__description Наши менеджеры максимально оперативно ответят на все Ваши вопросы
-                        .ui-form-request__content
-                            input.ui-input(type="text", placeholder="Контактное лицо")
-                            input.ui-input(type="text", placeholder="E-mail")
-                            a.ui-button.ui-button--size-lg.ui-button--block.ui-button--default Отправить
-                        .ui-form-request__content
-                            input.ui-input(type="text", placeholder="Тема")
-                            textarea.ui-textarea(type="text", placeholder="Ваше сообщение")
+                    form.grid.ui-form.ui-form-request
+                        .row
+                            .col.col--xl-4
+                                .ui-form-request__title Пишите нам
+                                .ui-form-request__description Наши менеджеры максимально оперативно ответят на все Ваши вопросы
+                            .col.col--xl-4
+                                input.ui-input.ui-input--block(type="text", placeholder="Контактное лицо")
+                                input.ui-input.ui-input--block(type="text", placeholder="E-mail")
+                                a.ui-button.ui-button--size-lg.ui-button--block.ui-button--default Отправить
+                            .col.col--xl-4
+                                input.ui-input.ui-input--block(type="text", placeholder="Тема")
+                                textarea.ui-textarea(type="text", placeholder="Ваше сообщение")

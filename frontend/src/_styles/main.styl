@@ -61,7 +61,13 @@ init($breakpoints, $columns)
 .ui-header__info
     justify-content space-between
     text-transform uppercase
-    padding-right 300px
+    padding-top 15px
+    padding-bottom 15px
+
+    @media (min-width: $breakpoints['lg'])
+        padding-right 300px
+        padding-top 0
+        padding-bottom 0
 
 .ui-header__menu
     background-color $color-isabelline
@@ -84,6 +90,10 @@ init($breakpoints, $columns)
     &__header
         display flex
         align-items center
+        justify-content center
+
+        @media (min-width: $breakpoints['lg'])
+            justify-content flex-start
 
     img
         padding-right 13px
@@ -108,7 +118,9 @@ init($breakpoints, $columns)
     font-family 'Panton'
     font-size 16px
     line-height 32px
-    padding-right 40px
+
+    @media (min-width: $breakpoints['lg'])
+        padding-right 40px
 
     a
         color #050505
@@ -124,7 +136,10 @@ init($breakpoints, $columns)
             cursor pointer
 
     &__item + &__item
-        margin-left 44px
+        margin-left 0
+
+        @media (min-width: $breakpoints['lg'])
+            margin-left 2%
 
 .ui-footer-menu
     font-family 'Panton'
@@ -400,19 +415,32 @@ init($breakpoints, $columns)
         align-items center
         justify-content space-between
         width 100%
+        flex-wrap wrap
+
+        @media (min-width: $breakpoints['lg'])
+            flex-wrap none
 
 .ui-step
     background $color-platinum
-    flex 1
-    padding-left 77px
-    margin-left -77px
-    padding-right 54px
+    flex initial
     overflow hidden
+    width 100%
+    margin-bottom 15px
+
+    @media (min-width: $breakpoints['lg'])
+        width auto
+        flex 1
+        margin-bottom 0
+        padding-left 77px
+        margin-left -77px
+        padding-right 54px
 
     &:first-child
-        padding-right 54px
         margin-left 0
         padding-left 0
+
+        @media (min-width: $breakpoints['lg'])
+            padding-right 54px
 
     &:last-child
         padding-right 0
@@ -441,6 +469,10 @@ init($breakpoints, $columns)
             right -86px
             top 0
             background #fff
+            display none
+
+            @media (min-width: $breakpoints['lg'])
+                display block
 
     &__center
         display flex
@@ -460,6 +492,10 @@ init($breakpoints, $columns)
             height 0
             position absolute
             display block
+            display none
+
+            @media (min-width: $breakpoints['lg'])
+                display block
 
         &:after
             border 47px solid transparent
@@ -472,6 +508,10 @@ init($breakpoints, $columns)
             right -86px
             top 0
             background #fff
+            display none
+
+            @media (min-width: $breakpoints['lg'])
+                display block
 
     &__last
         display flex
@@ -490,7 +530,10 @@ init($breakpoints, $columns)
             width 0
             height 0
             position absolute
-            display block
+            display none
+
+            @media (min-width: $breakpoints['lg'])
+                display block
 
 .ui-advantage
     display block
@@ -600,10 +643,16 @@ init($breakpoints, $columns)
         height calc(100% - 88px)
 
     &__variation
-        flex 1
+        flex initial
         position relative
         margin 44px 0
         background-size cover
+        width 100%
+        min-height 400px
+
+        @media (min-width: $breakpoints['lg'])
+            width auto
+            flex 1
 
     &__navigation
         position absolute
@@ -612,11 +661,21 @@ init($breakpoints, $columns)
         display flex
         justify-content space-between
         text-align center
+        flex-wrap wrap
+
+        a
+            flex 1
+
+        @media (min-width: $breakpoints['lg'])
+            flex-wrap none
 
     &__specifications
         background $color-platinum
         box-shadow 0px 3px 5px 0px rgba(0, 0, 0, 0.2)
-        max-width 300px
+        width 100%
+
+        @media (min-width: $breakpoints['lg'])
+            max-width 300px
 
     &__cart-mini
         padding 50px 0 0
@@ -657,14 +716,24 @@ init($breakpoints, $columns)
 
     &__title
         font-family 'Panton'
-        font-size 55px
+        font-size 35px
         color #1c282a
-        line-height 70px
+        line-height 50px
         font-weight bold
         text-transform uppercase
 
+        @media (min-width: $breakpoints['lg'])
+            font-size 55px
+            line-height 70px
+
     &__product-cart
         padding-top 82px
+
+    &__img
+        display none
+
+        @media (min-width: $breakpoints['lg'])
+            display block
 
 .ui-main-home
     background url('../images/main-home-bg.png') no-repeat 50% 50%
@@ -675,7 +744,8 @@ init($breakpoints, $columns)
         padding 15px 0
 
 .ui-price-calculate
-    padding 44px 0
+    padding-top 44px
+    padding-bottom 44px
 
 .ui-configurations
     padding-bottom 50px
@@ -723,6 +793,7 @@ init($breakpoints, $columns)
 
     &__header
         padding 30px 0
+        text-transform uppercase
 
 .ui-projects-history
     padding-bottom 30px
@@ -758,7 +829,7 @@ init($breakpoints, $columns)
     font-family 'Panton'
     line-height 26px
     margin-bottom 15px
-    box-shadow 0px 3px 5px 0px rgba(0, 0, 0, 0.1)
+    box-shadow 0px 3px 5px 0px rgba(0, 0, 0, .1)
 
     &__title
         font-size 20px
@@ -941,6 +1012,9 @@ init($breakpoints, $columns)
         left 42%
         top 55%
 
+.ui-image
+    &--responsive
+        max-width 100%
 .ui-px-overlay
     position absolute
     width 100%
@@ -951,6 +1025,7 @@ init($breakpoints, $columns)
     z-index 1000
     display none
 
+<<<<<<< HEAD
 .ui-materials
     padding-bottom 50px
 
@@ -979,3 +1054,6 @@ init($breakpoints, $columns)
 
     &__line
         padding-top 20px
+=======
+@import 'catalog-detail';
+>>>>>>> 8c9e5856a1984bda2eb03ea3469ea7495871be5e
