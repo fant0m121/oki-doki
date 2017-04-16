@@ -45,6 +45,35 @@ $(function() {
 });
 
 $(function() {
+    var owlCustomer = $('.js-examples-carousel');
+    owlCustomer.owlCarousel({
+        items: 3,
+        loop: true,
+        autoplay: true,
+        dots: false,
+        margin: 30,
+        responsive : {
+            0: {
+                items: 1
+            },
+            1200: {
+                items: 3
+            }
+        }
+    });
+
+    $('.js-examples-carousel-next').on('click', function() {
+        owlCustomer.trigger('next.owl.carousel');
+    });
+    $('.js-examples-carousel-prew').on('click', function() {
+        owlCustomer.trigger('prev.owl.carousel');
+    });
+    owlCustomer.on('changed.owl.carousel', function(event) {
+        $('.js-examples-carousel-number').text(event.item.index - 2);
+    });
+});
+
+$(function() {
     var owlCustomer = $('.js-configuration-carousel');
     owlCustomer.owlCarousel({
         items: 3,

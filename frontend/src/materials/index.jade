@@ -253,3 +253,38 @@ block content
                                 .ui-form-calcalate__about 
                                     .ui-form-calcalate__icon !
                                     .ui-form-calcalate__text Итоговая цена зависит от : #[br] объем, материалов, количества поворотных элементов
+    .ui-order
+        .grid.grid--container
+            .row.row--xl-center
+                .col.col--xl-4
+                    .ui-order__title Сделать заказ просто:
+                .col.col--xl-8.col--xl-align-middle.col--xl-flex
+                    .ui-order__step
+                        .ui-step
+                            .ui-step__first 
+                                img(src="/images/icons/order-step-1.png", alt="", height="51", width="61")
+                                .ui-step__title Вы отправляете заявку
+                        .ui-step
+                            .ui-step__center 
+                                img(src="/images/icons/order-step-2.png", alt="", height="57", width="57")
+                                .ui-step__title Согласовываем #[br]дизайн-проект
+                        .ui-step
+                            .ui-step__last 
+                                img(src="/images/icons/order-step-3.png", alt="", height="54", width="54")
+                                .ui-step__title Производим #[br]монтаж и установку
+    .ui-examples
+        .grid.grid--container
+            .row.row--xl-center
+                .col.col--xl-3
+                    .ui-examples__header.ui-heading.ui-heading--white.ui-heading--lvl4 Примеры работ
+                    .ui-slider-nav
+                        a.ui-slider-nav__arrow.js-examples-carousel-prew
+                            img(src="/images/icons/arrow-left.svg", alt="", height="47", width="16")
+                        span.ui-slider-nav__number.js-examples-carousel-number 1
+                        a.ui-slider-nav__arrow.js-examples-carousel-next
+                            img(src="/images/icons/arrow-rigth.svg", alt="", height="47", width="16")
+                .col.col--xl-9.owl-carousel.owl-theme.js-examples-carousel
+                    .ui-examples__content(style="background-image: url('/images/сonfigurations/1.png')")
+                    .ui-examples__content(style="background-image: url('/images/сonfigurations/1.png')")
+                    .ui-examples__content(style="background-image: url('/images/сonfigurations/1.png')")
+                    .ui-examples__content(style="background-image: url('/images/сonfigurations/1.png')")
