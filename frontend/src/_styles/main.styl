@@ -740,6 +740,7 @@ init($breakpoints, $columns)
 .ui-catalog-interactives
     background url('../images/catalog-interactives-bg.png') no-repeat 50% 50%
     padding-top 45px
+    position relative
 
     &__title
         font-family 'Panton'
@@ -1104,5 +1105,13 @@ init($breakpoints, $columns)
         background-position 50% 50%
         height 234px
         width 100%
+
+.ui-canvas
+    position absolute
+    width 100%
+    height 100%
+    z-index -1
+    left 0
+    top 0
 
 @import 'catalog-detail';
