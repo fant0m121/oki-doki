@@ -85,7 +85,10 @@ $(function() {
             0: {
                 items: 1
             },
-            1200: {
+            768: {
+                items: 2
+            },
+            992: {
                 items: 3
             }
         }
@@ -113,6 +116,9 @@ $(function() {
         responsive : {
             0: {
                 items: 2
+            },
+            768: {
+                items: 3
             },
             1200: {
                 items: 4

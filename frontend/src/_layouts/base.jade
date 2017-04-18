@@ -32,7 +32,7 @@ body.ui-page
     header.ui-header 
         .ui-header__content
             .grid.grid--container
-                .row.row--xl-center
+                .row.row--md-center
                     .col.col--xl-2.col--md-3.col--xs-12.text--xs-center.text--lg-left
                         a.ui-logo(href="/")
                             img(src="/images/header-logo.png")
@@ -47,7 +47,7 @@ body.ui-page
         .ui-header__menu
             .grid.grid--container
                 .row.row--xl-center
-                    nav.ui-menu.col.col--xl-10.col--xl-flex
+                    nav.ui-menu.col.col--xl-10.col--xl-flex.col--lg-flex
                       .ui-menu__item
                           a.ui-menu__link(href="/catalog/") Каталог
                       .ui-menu__item
@@ -77,37 +77,38 @@ body.ui-page
     footer.ui-footer
         .grid.grid--container
             .row.row--xl-center
-                .col.col--xl-2
+                .col.col--xl-2.col--lg-3.col--md-4
                     a.ui-logo(href="/")
                         img(src="/images/footer-logo.png")
-                .ui-address.col.col--xl-8 Г. МОСКВА,  СОКОЛЬНИЧЕСКИЙ ВАЛ, 1А
-                .col.col--xl-2.text--xl-right
+                .ui-address.col.col--xl-8.col--lg-6.col--md-4 Г. МОСКВА,  СОКОЛЬНИЧЕСКИЙ ВАЛ, 1А
+                .col.col--xl-2.col--lg-3.col--md-4.text--xl-right
                     .ui-phone__footer.ui-phone 8 (495) 663 18 81
             .row.row--xl-center
-                .col.col--xl-2
+                .col.col--xl-2.col--lg-3.col--md-4
                     .ui-slogan  Производство и продажа#[br] офисных перегородок
-                nav.ui-footer-menu.col.col--xl-8.col--xl-flex
-                  .ui-footer-menu__item
-                      a.ui-footer-menu__link(href="") Каталог
-                  .ui-footer-menu__item
-                      a.ui-footer-menu__link(href="") Конфигурации
-                  .ui-footer-menu__item
-                      a.ui-footer-menu__link(href="") Сервис
-                  .ui-footer-menu__item
-                      a.ui-footer-menu__link(href="") Проекты
-                  .ui-footer-menu__item
-                      a.ui-footer-menu__link(href="") Цены
-                  .ui-footer-menu__item
-                      a.ui-footer-menu__link(href="") Направления
-                  .ui-footer-menu__item
-                      a.ui-footer-menu__link(href="") О компании
-                  .ui-footer-menu__item
-                      a.ui-footer-menu__link(href="") Дилерам
-                  .ui-footer-menu__item
-                      a.ui-footer-menu__link(href="") Вопрос-ответ
-                  .ui-footer-menu__item
-                      a.ui-footer-menu__link(href="") Контакты
-                .col.col--xl-2.text--xl-right
+                nav.ui-footer-menu.col.col--xl-8.col--lg-6.col--md-4
+                    .row.row--no-gutters.row--md-space-between
+                        .ui-footer-menu__item.col--xl-auto.col--lg-6.col--md-6
+                            a.ui-footer-menu__link(href="") Каталог
+                        .ui-footer-menu__item.col--xl-auto.col--lg-6.col--md-6
+                            a.ui-footer-menu__link(href="") Конфигурации
+                        .ui-footer-menu__item.col--xl-auto.col--lg-6.col--md-6
+                            a.ui-footer-menu__link(href="") Сервис
+                        .ui-footer-menu__item.col--xl-auto.col--lg-6.col--md-6
+                            a.ui-footer-menu__link(href="") Проекты
+                        .ui-footer-menu__item.col--xl-auto.col--lg-6.col--md-6
+                            a.ui-footer-menu__link(href="") Цены
+                        .ui-footer-menu__item.col--xl-auto.col--lg-6.col--md-6
+                            a.ui-footer-menu__link(href="") Направления
+                        .ui-footer-menu__item.col--xl-auto.col--lg-6.col--md-6
+                            a.ui-footer-menu__link(href="") О компании
+                        .ui-footer-menu__item.col--xl-auto.col--lg-6.col--md-6
+                            a.ui-footer-menu__link(href="") Дилерам
+                        .ui-footer-menu__item.col--xl-auto.col--lg-6.col--md-6
+                            a.ui-footer-menu__link(href="") Вопрос-ответ
+                        .ui-footer-menu__item.col--xl-auto.col--lg-6.col--md-6
+                            a.ui-footer-menu__link(href="") Контакты
+                .col.col--xl-2.col--lg-3.col--md-4.text--xl-right
                     .ui-regim ПН-ЧТ 9:00 — 19:00#[br] ПТ 9:00 — 18:00
         .grid.grid--no-gutters
             .row.row--xl-center.row--no-gutters

@@ -10,25 +10,26 @@ block content
                 .col.col--xl-12
                     .ui-catalog-interactives__title Технологии офисного#[br] пространства
             .row
-                .col.col--xl-4.col--xs-12.col--no-gutter-right
+                .col.col--xl-4.col--lg-4.col--xs-12.col--no-gutter-right
                     .ui-catalog-interactives__product-cart
                         .ui-product-cart-small
                             .ui-product-cart-small__title.ui-product-cart-small__title--darkcoral Цельностеклянные#[br] перегородки
                             .ui-product-cart-small__description Цельностеклянные перегородки имеют безрамную конструкцию и создают ощущение открытого пространства в вашем офисе
                             .ui-product-cart-small__footer
-                                .ui-product-cart-small__price Цена от 3600 руб/м2
+                                .ui-product-cart-small__price Цена от 3600 руб/м
+                                    sup 2
                                 .ui-product-cart-small__time Срок: от 10 дней
                                 .ui-product-cart-small__link
                                     a.ui-circle-button.ui-circle-button--red.ui-circle-button--size-md(href="#")
                                         i +
-                .col.col--xl-8.col--xs-12
+                .col.col--xl-8.col--lg-8.col--xs-12
                     .ui-catalog-interactives__img
-                        img(src="/images/catalog-interactives.png")
+                        img.ui-image.ui-image--responsive(src="/images/catalog-interactives.png")
     .ui-main-home
         .ui-advantage
             .grid.grid--container
                 .row.row--no-gutters
-                    .col.col--xl.col--no-gutters
+                    .col.col--xl.col--lg.col--no-gutters
                         .ui-advantage__item
                             .ui-advantage__header
                                 .ui-advantage__icon
@@ -46,7 +47,7 @@ block content
                                 .ui-advantage__link
                                     a.ui-circle-button.ui-circle-button--red.ui-circle-button--size-md(href="/advantages/experience/")
                                         i +
-                    .col.col--xl.col--no-gutters
+                    .col.col--xl.col--lg.col--no-gutters
                         .ui-advantage__item
                             .ui-advantage__header
                                 .ui-advantage__icon
@@ -58,7 +59,7 @@ block content
                                 .ui-advantage__link
                                     a.ui-circle-button.ui-circle-button--red.ui-circle-button--size-md(href="/advantages/own-production/")
                                         i +
-                    .col.col--xl.col--no-gutters
+                    .col.col--xl.col--lg.col--no-gutters
                         .ui-advantage__item
                             .ui-advantage__header
                                 .ui-advantage__icon
@@ -73,7 +74,7 @@ block content
                                 .ui-advantage__link
                                     a.ui-circle-button.ui-circle-button--red.ui-circle-button--size-md(href="/advantages/warranty/")
                                         i +
-                    .col.col--xl.col--no-gutters
+                    .col.col--xl.col--lg.col--no-gutters
                         .ui-advantage__item
                             .ui-advantage__header
                                 .ui-advantage__icon
@@ -92,7 +93,7 @@ block content
                     .col.col--xl-12
                         .ui-our-production__title Наша продукция
                 .row.row--no-gutters.ui-our-production__cart
-                    .col.col--xl-4.col--no-gutters
+                    .col.col--xl-4.col--lg-4.col--no-gutters
                         .ui-our-production__product
                             .ui-product-cart-small.ui-product-cart-small--darkcoral
                                 .ui-product-cart-small__title.ui-product-cart-small__title--darkcoral Цельностеклянные#[br] перегородки
@@ -124,55 +125,82 @@ block content
                             .ui-our-production-specifications__button
                                 .ui-button.ui-button--default.ui-button--size-md Расчитать стоимость
                 .row.ui-our-production__cart-mini
-                    .col.col--xl-3
+                    .col.col--xl-3.col--lg-4.col--md-6
                         .ui-product-cart-mini.ui-product-cart-mini--selected(style="background-image: url('/images/product-cart-mini/celnostekljannye-peregorodki.png')")
-                            .ui-product-cart-mini__info
-                                .ui-product-cart-mini__title Стеклянные#[br] перегородки
-                                .ui-product-cart-mini__price от 3600 руб/м2
-                            a.ui-product-cart-mini__link.ui-quarter-button +
-                    .col.col--xl-3
-                        .ui-product-cart-mini(style="background-image: url('/images/product-cart-mini/statsionarnyye-ofisnyye-peregorodki.png')")
-                            .ui-product-cart-mini__info
-                                .ui-product-cart-mini__title Стационарные офисные#[br] перегородки
-                                .ui-product-cart-mini__price от 2100 руб/м2
-                            a.ui-product-cart-mini__link.ui-quarter-button +
-                    .col.col--xl-3
-                        .ui-product-cart-mini(style="background-image: url('/images/product-cart-mini/mobile-office-peregorodki.png')")
-                            .ui-product-cart-mini__info
-                                .ui-product-cart-mini__title Мобильные офисные#[br] перегородки
-                                .ui-product-cart-mini__price от 1800 руб/модуль
-                            a.ui-product-cart-mini__link.ui-quarter-button +
-                    .col.col--xl-3
-                        .ui-product-cart-mini(style="background-image: url('/images/product-cart-mini/vkhodnyye-gruppy.png')")
-                            .ui-product-cart-mini__info
-                                .ui-product-cart-mini__title Входные группы
-                                .ui-product-cart-mini__price от 7000 руб/м2
-                            a.ui-product-cart-mini__link.ui-quarter-button +
+                            .grid.grid--no-gutters
+                                .row.row--no-gutters
+                                    .ui-product-cart-mini__content
+                                        .ui-product-cart-mini__title Стеклянные#[br] перегородки
+                                        .ui-product-cart-mini__price от 3600 руб/м
+                                            sup 2
+                                    a.ui-product-cart-mini__link +
 
-                    .col.col--xl-3
-                        .ui-product-cart-mini.ui-product-cart-mini--selected(style="background-image: url('/images/product-cart-mini/legkiye-ekonom-peregorodki.png')")
-                            .ui-product-cart-mini__info
-                                .ui-product-cart-mini__title Легкие эконом #[br]перегородки
-                                .ui-product-cart-mini__price от 1800 руб/модуль
-                            a.ui-product-cart-mini__link.ui-quarter-button +
-                    .col.col--xl-3
+                    .col.col--xl-3.col--lg-4.col--md-6
                         .ui-product-cart-mini(style="background-image: url('/images/product-cart-mini/statsionarnyye-ofisnyye-peregorodki.png')")
-                            .ui-product-cart-mini__info
-                                .ui-product-cart-mini__title Сантехнические #[br]перегородки
-                                .ui-product-cart-mini__price от 1800 руб/м2
-                            a.ui-product-cart-mini__link.ui-quarter-button +
-                    .col.col--xl-3
+                            .grid.grid--no-gutters
+                                .row.row--no-gutters
+                                    .ui-product-cart-mini__content
+                                        .ui-product-cart-mini__title Стационарные офисные#[br] перегородки
+                                        .ui-product-cart-mini__price от 2100 руб/м
+                                            sup 2
+                                    a.ui-product-cart-mini__link +
+
+                    .col.col--xl-3.col--lg-4.col--md-6
+                        .ui-product-cart-mini(style="background-image: url('/images/product-cart-mini/mobile-office-peregorodki.png')")
+                            .grid.grid--no-gutters
+                                .row.row--no-gutters
+                                    .ui-product-cart-mini__content
+                                        .ui-product-cart-mini__title Мобильные офисные#[br] перегородки
+                                        .ui-product-cart-mini__price от 1800 руб/модуль
+                                    a.ui-product-cart-mini__link +
+
+                    .col.col--xl-3.col--lg-4.col--md-6
+                        .ui-product-cart-mini(style="background-image: url('/images/product-cart-mini/vkhodnyye-gruppy.png')")
+                            .grid.grid--no-gutters
+                                .row.row--no-gutters
+                                    .ui-product-cart-mini__content
+                                        .ui-product-cart-mini__title Входные группы
+                                        .ui-product-cart-mini__price от 7000 руб/м
+                                            sup 2
+                                    a.ui-product-cart-mini__link +
+
+                    .col.col--xl-3.col--lg-4.col--md-6
+                        .ui-product-cart-mini.ui-product-cart-mini--selected(style="background-image: url('/images/product-cart-mini/legkiye-ekonom-peregorodki.png')")
+                            .grid.grid--no-gutters
+                                .row.row--no-gutters
+                                    .ui-product-cart-mini__content
+                                        .ui-product-cart-mini__title Легкие эконом #[br]перегородки
+                                        .ui-product-cart-mini__price от 1800 руб/модуль
+                                    a.ui-product-cart-mini__link +
+
+                    .col.col--xl-3.col--lg-4.col--md-6
+                        .ui-product-cart-mini(style="background-image: url('/images/product-cart-mini/statsionarnyye-ofisnyye-peregorodki.png')")
+                            .grid.grid--no-gutters
+                                .row.row--no-gutters
+                                    .ui-product-cart-mini__content
+                                        .ui-product-cart-mini__title Сантехнические #[br]перегородки
+                                        .ui-product-cart-mini__price от 1800 руб/м
+                                            sup 2
+                                    a.ui-product-cart-mini__link +
+
+                    .col.col--xl-3.col--lg-4.col--md-6
                         .ui-product-cart-mini(style="background-image: url('/images/product-cart-mini/ofisnaya-mebel.png')")
-                            .ui-product-cart-mini__info
-                                .ui-product-cart-mini__title Офисная мебель
-                                .ui-product-cart-mini__price от 1500 руб/шт
-                            a.ui-product-cart-mini__link.ui-quarter-button +
-                    .col.col--xl-3
+                            .grid.grid--no-gutters
+                                .row.row--no-gutters
+                                    .ui-product-cart-mini__content
+                                        .ui-product-cart-mini__title Офисная мебель
+                                        .ui-product-cart-mini__price от 1500 руб/шт
+                                    a.ui-product-cart-mini__link +
+
+                    .col.col--xl-3.col--lg-4.col--md-6
                         .ui-product-cart-mini(style="background-image: url('/images/product-cart-mini/steklyannyye-dveri.png')")
-                            .ui-product-cart-mini__info
-                                .ui-product-cart-mini__title Стеклянные двери
-                                .ui-product-cart-mini__price от 13000 руб/шт
-                            a.ui-product-cart-mini__link.ui-quarter-button +
+                            .grid.grid--no-gutters
+                                .row.row--no-gutters
+                                    .ui-product-cart-mini__content
+                                        .ui-product-cart-mini__title Стеклянные двери
+                                        .ui-product-cart-mini__price от 13000 руб/шт
+                                    a.ui-product-cart-mini__link +
+
     .ui-configuration
         .grid.grid--container
             .row
@@ -232,9 +260,9 @@ block content
     .ui-project-home
         .grid.grid--container
             .row.row--xl-center.ui-project-home__header
-                .col.col--xl-11
+                .col.col--xl-11.col--lg-9
                     .ui-heading.ui-heading--white.ui-heading--lvl2 Истории проектов
-                .col.col--xl-1
+                .col.col--xl-1.col--lg-3
                     .ui-slider-nav
                         a.ui-slider-nav__arrow.js-project-carousel-prew
                             img(src="/images/icons/arrow-left.svg", alt="", height="47", width="16")
@@ -243,43 +271,43 @@ block content
                             img(src="/images/icons/arrow-rigth.svg", alt="", height="47", width="16")
         .grid.grid--container.owl-carousel.owl-theme.js-project-carousel
             .row
-                .col.col--xl-3
+                .col.col--xl-3.col--lg-4.col--md-6
                     .ui-project-home__content
                         .ui-project-home__title Монтаж офисных перегородок для ООО «Фиас Констракшн»
                         .ui-project-home__text Часто бывает, что заказчику необходимо в сжатые сроки разделить отдельно рабочие зоны, при этом выдержать деловой стиль и не стеснять пространство и без того не большого помещения.
                         .ui-project-home__link
                             a.ui-circle-button.ui-circle-button--red.ui-circle-button--size-md(href="#")
                                 i +
-                .col.col--xl-6.col--xl-flex
+                .col.col--xl-6.col--lg-5.col--md-6.col--xl-flex
                     .ui-project-home__photo(style="background-image: url('/images/projects/1.jpg')")
-                .col.col--xl-3
+                .col.col--xl-3.col--lg-3.col--md-12
                     .ui-project-home__photo--small(style="background-image: url('/images/projects/1.jpg')")
                     .ui-project-home__photo--small(style="background-image: url('/images/projects/1.jpg')")
 
             .row
-                .col.col--xl-3
+                .col.col--xl-3.col--lg-4.col--md-6
                     .ui-project-home__content
                         .ui-project-home__title Монтаж офисных перегородок для ООО «Фиас Констракшн»
                         .ui-project-home__text Часто бывает, что заказчику необходимо в сжатые сроки разделить отдельно рабочие зоны, при этом выдержать деловой стиль и не стеснять пространство и без того не большого помещения.
                         .ui-project-home__link
                             a.ui-circle-button.ui-circle-button--red.ui-circle-button--size-md(href="#")
                                 i +
-                .col.col--xl-6.col--xl-flex
+                .col.col--xl-6.col--lg-5.col--md-6.col--xl-flex
                     .ui-project-home__photo(style="background-image: url('/images/projects/1.jpg')")
-                .col.col--xl-3
+                .col.col--xl-3.col--lg-3.col--md-12
                     .ui-project-home__photo--small(style="background-image: url('/images/projects/1.jpg')")
                     .ui-project-home__photo--small(style="background-image: url('/images/projects/1.jpg')")
             .row
-                .col.col--xl-3
+                .col.col--xl-3.col--lg-4.col--md-4
                     .ui-project-home__content
                         .ui-project-home__title Монтаж офисных перегородок для ООО «Фиас Констракшн»
                         .ui-project-home__text Часто бывает, что заказчику необходимо в сжатые сроки разделить отдельно рабочие зоны, при этом выдержать деловой стиль и не стеснять пространство и без того не большого помещения.
                         .ui-project-home__link
                             a.ui-circle-button.ui-circle-button--red.ui-circle-button--size-md(href="#")
                                 i +
-                .col.col--xl-6.col--xl-flex
+                .col.col--xl-6.col--lg-5.col--md-6.col--xl-flex
                     .ui-project-home__photo(style="background-image: url('/images/projects/1.jpg')")
-                .col.col--xl-3
+                .col.col--xl-3.col--lg-3.col--md-12
                     .ui-project-home__photo--small(style="background-image: url('/images/projects/1.jpg')")
                     .ui-project-home__photo--small(style="background-image: url('/images/projects/1.jpg')")
     .ui-rewiew
@@ -288,17 +316,17 @@ block content
                 .col.col--xl-12
                     .ui-heading.ui-heading--lvl2.ui-rewiew__header Офисные перегородки
             .row
-                .col.col--xl-6
+                .col.col--xl-6.col--lg-6.col--md-6
                     .ui-text.ui-text--bold Офисная перегородка - конструкция, главное преимущество которой – универсальность.
                     .ui-text Компания «Оки-Доки» предлагает огромное количество вариантов изделий, которые удачно впишутся в помещения абсолютно любого коммерческого объекта.
-                .col.col--xl-6
+                .col.col--xl-6.col--lg-6.col--md-6
                     .ui-text.ui-text--italic Эффективность конструкций определяется их многофункциональностью: они позволяют не только нужным образом разбивать помещения на зоны, но еще и придавать им нужный стиль. Именно поэтому перегородки можно рассматривать, как декоративный элемент интерьера.
             .row
-                .col.col--xl-6
+                .col.col--xl-6.col--lg-6.col--md-6.col--md-flex
                     .ui-text-box.ui-text-box--darkcoral
                         .ui-heading.ui-heading--lvl3.ui-text-box__header Производство перегородок
                         .ui-text-box__text У нас вы можете заказать офисную перегородку по всей России, в том числе в Москве.#[br] Для изготовления таких конструкций используются разные материалы, каждый из которых имеет преимущества.
-                .col.col--xl-6
+                .col.col--xl-6.col--lg-6.col--md-6.col--md-flex
                     .ui-text-box.ui-text-box--bondiblue 
                         .ui-heading.ui-heading--lvl3.ui-text-box__header Офисные перегородки, #[br]как предмет интерьера офиса
                         .ui-text-box__text Ассортимент перегородок для офиса поражает разнообразием не только цветовых решений, но и различными вариантами декора, формы и конфигураций. В таких условиях заказать наиболее оптимальную и подходящую под конкретное помещение модель очень просто.
@@ -306,25 +334,25 @@ block content
                 .col.col--xl-12
                     .ui-rewiew__text.ui-text.ui-text--italic Кроме того, поверхность офисной перегородки может быть декорирована текстилем или виниловым покрытием. Вы можете заказать как типовое, так и дизайнерское оформление конструкции. Специалисты нашей компании благодаря своему большому опыту в силах реализовать любой проект.
             .row
-                .col.col--xl-3
+                .col.col--xl-3.col--lg-3.col--md-6
                     .ui-material-box(style="background-image: url('/images/material-box/drywall-bg.png')")
                         .ui-material-box__title Гипсокартон
                         .ui-material-box__link
                             a.ui-circle-button.ui-circle-button--red.ui-circle-button--size-md(href="#")
                                 i +
-                .col.col--xl-3
+                .col.col--xl-3.col--lg-3.col--md-6
                     .ui-material-box(style="background-image: url('/images/material-box/pvc-bg.png')")
                         .ui-material-box__title ПВХ
                         .ui-material-box__link
                             a.ui-circle-button.ui-circle-button--red.ui-circle-button--size-md(href="#")
                                 i +
-                .col.col--xl-3
+                .col.col--xl-3.col--lg-3.col--md-6
                     .ui-material-box(style="background-image: url('/images/material-box/glass-bg.png')")
                         .ui-material-box__title Стекло
                         .ui-material-box__link
                             a.ui-circle-button.ui-circle-button--red.ui-circle-button--size-md(href="#")
                                 i +
-                .col.col--xl-3
+                .col.col--xl-3.col--lg-3.col--md-6
                     .ui-material-box(style="background-image: url('/images/material-box/mdf-bg.png')")
                         .ui-material-box__title МДФ
                         .ui-material-box__link
@@ -336,9 +364,9 @@ block content
                         .ui-mounting__title Монтаж перегородок
                         .ui-mounting__text Производство перегородок для офисных помещений не единственное направление деятельности компании«Оки-Доки», мы занимаемся и установкой конструкций. Почему стоит воспользоваться услугами именно нашей компании?
             .row.row--xl-center
-                .col.col--xl-5
+                .col.col--xl-5.col--lg-6.col--md-6
                     .ui-our-advantages-title Ответом на этот#[br] вопрос будут наши#[br] преимущества:
-                .col.col--xl-7
+                .col.col--xl-7.col--lg-6.col--md-6
                     .ui-our-advantages-block
                         ul.ui-our-advantages-block__list
                             li •	&nbsp &nbsp Применение высокотехнологичного оборудования при производстве перегородок;
@@ -348,10 +376,10 @@ block content
                             li •	&nbsp &nbsp Гарантия качества изделия и установки;
                             li •	&nbsp &nbsp Производство офисных перегородокв «Оки-Доки» по дизайнерским проектам.
             .row.row--xl-center
-                .col.col--xl-2
+                .col.col--xl-2.col--lg-3.col--md-4
                     .ui-home-price-box.ui-home-price-box__icon 
                         img(src="/images/icons/money-bag.png")
-                .col.col--xl-10
+                .col.col--xl-10.col--lg-9.col--md-8
                     .ui-home-price-box
                         .ui-home-price-box__title Стоимость офисных перегородок
                         .ui-home-price-box__text Доступная цена на представленные товары – хороший бонус от компании«Оки-Доки». Низкая стоимость и высокое качество – оптимальные условия для того, чтобы заказать и купить офисную перегородку, к тому же широкий ассортимент дает свободу выбора. Стоимость зависит от нескольких факторов: материала, комплектующих, конфигурации и сложности монтажа конструкции.
@@ -397,19 +425,19 @@ block content
                 .col.col--xl-12
                     .ui-companies__header Нас выбирают
             .row.row--xl-center.ui-companies-list
-                .col.col--xl-4.col--no-gutters 
+                .col.col--xl-4.col--lg-4.col--md-12.col--no-gutters 
                     .ui-companies__title С нами работает 
                         span более 5000 
                         |#{' '} компаний
-                .col.col--xl-2
+                .col.col--xl-2.col--lg-2.col--md-3
                     .ui-companies__element.ui-companies__element-first
-                        img(src="/images/companies/resch-logo.png")
-                .col.col--xl-2
+                        img.ui-image.ui-image--responsive(src="/images/companies/resch-logo.png")
+                .col.col--xl-2.col--lg-2.col--md-3
                     .ui-companies__element
-                        img(src="/images/companies/rgd-logo.png")
-                .col.col--xl-2
+                        img.ui-image.ui-image--responsive(src="/images/companies/rgd-logo.png")
+                .col.col--xl-2.col--lg-2.col--md-3
                     .ui-companies__element
-                        img(src="/images/companies/nord-strean-logo.png")
-                .col.col--xl-2
+                        img.ui-image.ui-image--responsive(src="/images/companies/nord-strean-logo.png")
+                .col.col--xl-2.col--lg-2.col--md-3
                     .ui-companies__element
-                        img(src="/images/companies/viscom.png")
+                        img.ui-image.ui-image--responsive(src="/images/companies/viscom.png")

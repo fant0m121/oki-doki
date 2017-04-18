@@ -6,6 +6,8 @@ make-row-helpers($breakpoint)
     align-items: center
   .row--{$breakpoint}-bottom
     align-items: flex-end
+  .row--{$breakpoint}-space-between
+    justify-content space-between
 
 // Helper for the sorting the first item
 make-col-helpers($breakpoint)
@@ -29,6 +31,7 @@ make-col-helpers($breakpoint)
 
   .col--{$breakpoint}-auto
       flex initial
+      width auto
 
 // Helper for aligning the text
 make-text-helpers($breakpoint)

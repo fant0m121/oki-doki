@@ -43,7 +43,6 @@ init($breakpoints, $columns)
 *:before,
 *:after
     box-sizing border-box
-    outline 1px dashed green
     margin 0
     padding 0
 
@@ -68,7 +67,7 @@ init($breakpoints, $columns)
     padding-top 15px
     padding-bottom 15px
 
-    @media (min-width: $breakpoints['lg'])
+    @media (min-width: $breakpoints['xl'])
         padding-right 300px
         padding-top 0
         padding-bottom 0
@@ -122,9 +121,12 @@ init($breakpoints, $columns)
     font-family 'Panton'
     font-size 16px
     line-height 32px
+    display flex
+    flex-wrap wrap
 
-    @media (min-width: $breakpoints['lg'])
-        padding-right 40px
+    @media (min-width: $breakpoints['md'])
+        flex-wrap none
+        justify-content space-between
 
     a
         color #050505
@@ -142,8 +144,8 @@ init($breakpoints, $columns)
     &__item + &__item
         margin-left 0
 
-        @media (min-width: $breakpoints['lg'])
-            margin-left 2%
+        @media (min-width: $breakpoints['xl'])
+            margin-left 1.9%
 
 .ui-footer-menu
     font-family 'Panton'
@@ -247,6 +249,10 @@ init($breakpoints, $columns)
 
         &--small
             height 185px
+            margin-top 17px
+
+            @media (min-width: $breakpoints['lg'])
+                margin-top 0
 
         &--small + &--small
             margin-top 17px
@@ -742,11 +748,6 @@ init($breakpoints, $columns)
 .ui-main-home
     background url('../images/main-home-bg.png') no-repeat 50% 50%
 
-.ui-catalog
-
-    &__line
-        padding 15px 0
-
 .ui-price-calculate
     padding-top 44px
     padding-bottom 44px
@@ -822,6 +823,7 @@ init($breakpoints, $columns)
         background-position 50% 50%
         background-repeat no-repeat
         background-size cover
+        min-height 250px
 
     &__line
         padding 0 0 22px 0
