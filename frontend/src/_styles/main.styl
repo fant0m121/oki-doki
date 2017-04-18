@@ -554,14 +554,20 @@ init($breakpoints, $columns)
         cursor pointer
 
         &:hover
-            width 50%
+            width 100%
             flex none
 
+            @media (min-width: $breakpoints['lg'])
+                width 50%
+
             & ^[0]__content
-                padding 11px 96px 14px 33px
+                padding 11px 72px 14px 20px
                 width 100%
                 height auto
                 visibility visible
+
+                @media (min-width: $breakpoints['xl'])
+                    padding 11px 96px 14px 33px
 
             & ^[0]__item
                 background #009ba4
@@ -591,15 +597,23 @@ init($breakpoints, $columns)
         padding 10px 0
         align-items center
         justify-content center
+        margin-top 15px
+
+        @media (min-width: $breakpoints['xl'])
+            margin-top 0
 
     &__header
-        font-size 26px
+        font-size 20px
         line-height 22px
         display flex
         flex-direction column
         align-items center
-        padding 9px 39px 1px 43px
+        padding 9px 20px 1px 20px
         border-right 2px solid transparent
+
+        @media (min-width: $breakpoints['xl'])
+            padding 9px 39px 1px 43px
+            font-size 26px
 
     &__icon
         height 78px
@@ -632,7 +646,10 @@ init($breakpoints, $columns)
         overflow hidden
         visibility hidden
         height 0
-        font-size 18px
+        font-size 16px
+
+        @media (min-width: $breakpoints['xl'])
+            font-size 18px
 
     &__title
         padding-top 15px
@@ -740,10 +757,12 @@ init($breakpoints, $columns)
         padding-top 82px
 
     &__img
-        display none
+        display block
+        padding-top 22px
 
         @media (min-width: $breakpoints['lg'])
-            display block
+            padding-top 0
+
 
 .ui-main-home
     background url('../images/main-home-bg.png') no-repeat 50% 50%
