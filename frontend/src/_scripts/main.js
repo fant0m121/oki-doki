@@ -299,7 +299,8 @@ $(function() {
             $('.js-faq-item').find('span').text('+');
             $(this).addClass('active').find('span').text('-');
             $(this).next('div').slideDown(200);
-        } else {
+        }
+        else {
             $(this).removeClass('active').next('div').slideUp();
             $(this).find('span').text('+');
         }

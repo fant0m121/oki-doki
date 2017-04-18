@@ -549,9 +549,16 @@ init($breakpoints, $columns)
     display block
     margin-top 65px
 
+    & .row
+        @media (min-width: $breakpoints['xl'])
+            flex-wrap nowrap
+
     & .col
-        transition width .2s ease
+        transition width .2s ease-out
         cursor pointer
+
+        @media (min-width: $breakpoints['xl'])
+            width 25%
 
         &:hover
             width 100%
@@ -560,18 +567,23 @@ init($breakpoints, $columns)
             @media (min-width: $breakpoints['lg'])
                 width 50%
 
+            & ^[0]__item
+                background-color #009ba4
+                color #fff
+
             & ^[0]__content
                 padding 11px 72px 14px 20px
                 width 100%
-                height auto
                 visibility visible
+                max-height 124px
+                opacity 1
 
                 @media (min-width: $breakpoints['xl'])
                     padding 11px 96px 14px 33px
 
-            & ^[0]__item
-                background #009ba4
-                color #fff
+            & ^[0]__link
+                opacity 1
+                transition-delay 0s
 
             & ^[0]__header
                 border-color #fff
@@ -583,11 +595,6 @@ init($breakpoints, $columns)
                     color #fff
                     fill #fff
 
-            & ^[0]__text
-                display block
-                height 100%
-                visibility visible
-
     &__item
         display flex
         position relative
@@ -598,6 +605,7 @@ init($breakpoints, $columns)
         align-items center
         justify-content center
         margin-top 15px
+        transition background-color .2s ease
 
         @media (min-width: $breakpoints['xl'])
             margin-top 0
@@ -610,6 +618,7 @@ init($breakpoints, $columns)
         align-items center
         padding 9px 20px 1px 20px
         border-right 2px solid transparent
+        transition border-color .2s ease
 
         @media (min-width: $breakpoints['xl'])
             padding 9px 39px 1px 43px
@@ -623,6 +632,8 @@ init($breakpoints, $columns)
         display flex
         align-items center
         justify-content center
+        max-height 149px
+        overflow hidden
 
         svg
             color $color-darkcoral
@@ -634,18 +645,18 @@ init($breakpoints, $columns)
         position absolute
         bottom 0
         right 0
+        opacity 0
+        transition opacity .2s linear .15s
 
     &__content
         padding 0
         width 0
+        max-height 0
         overflow hidden
-        visibility hidden
+        opacity 0
+        transition opacity .2s linear .15s
 
     &__text
-        display none
-        overflow hidden
-        visibility hidden
-        height 0
         font-size 16px
 
         @media (min-width: $breakpoints['xl'])
