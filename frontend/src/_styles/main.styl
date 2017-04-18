@@ -342,12 +342,14 @@ init($breakpoints, $columns)
         display flex
         justify-content center
         align-items center
-        background url('../images/clients-line-bg.png') no-repeat
         height 121px
         padding-left 10px
 
-    &__element-first
-        background none
+        @media (min-width: $breakpoints['md'])
+            background url('../images/clients-line-bg.png') no-repeat
+
+        &-first
+            background none
 
 .ui-mounting
     font-family 'Panton'

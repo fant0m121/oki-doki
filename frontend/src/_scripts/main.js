@@ -108,6 +108,9 @@ $(function() {
 $(function() {
     $(document).on('ready', function() {
         var canvas = $('.js-canvas-bg')[0];
+        if(!$('.js-canvas-bg')[0]) {
+            return;
+        }
         var parent = $('.js-canvas-bg').parent()[0];
         var ctx = canvas.getContext('2d');
         var cw = canvas.width = parent.offsetWidth;
@@ -247,7 +250,6 @@ $(function() {
 
             cw = canvas.width = parent.offsetWidth;
             ch = canvas.height = parent.offsetHeight;
-            console.log(cw, ch);
 
             Draw();
         };
@@ -286,6 +288,11 @@ $(function() {
     });
     $('.js-customer-reviews-carousel-prew').on('click', function() {
         owlReviews.trigger('prev.owl.carousel');
+    });
+});
+$(function() {
+    $('.js-seo-text-toggle').on('click', function() {
+        $('.ui-catalog-seo__text').toggleClass('ui-catalog-seo__text--opened');
     });
 });
 

@@ -12,6 +12,7 @@
 
     &__image
         text-align center
+        flex 1
         background linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0) 6%, #fff 6%, #fff 94%, rgba(255, 255, 255, 0) 94%, rgba(255, 255, 255, 0) 100%)
 
 .ui-catalog-detail-info
@@ -77,7 +78,7 @@
 
     &__content
         background #e5e5e5
-        padding 12px
+        padding 12px 15px
 
     &__price
         font-size 26px
@@ -125,7 +126,10 @@
 
 .ui-catalog-seo
     margin-top -60px
-    box-shadow 0px 3px 10px 0px rgba(0, 0, 0, .1)
+
+    &__content
+        box-shadow 0px 3px 10px 0px rgba(0, 0, 0, .1)
+        padding-bottom 28px
 
     &__heading
         padding-top 28px
@@ -171,6 +175,7 @@
 
     @media (min-width: $breakpoints['xl'])
         margin-top 12px
+        margin-left 0
 
 .ui-works
     padding-bottom 75px
@@ -205,19 +210,28 @@
 
     &__nav
         position absolute
-        bottom 0
+        bottom -50px
         left 15px
         z-index 11
         display flex
+        width calc(100% - 30px)
+
+        @media (min-width: $breakpoints['md'])
+            width auto
+            bottom 0
 
         a
             font-size 16px
             font-weight bold
             display block
-            width 250px
+            width 100%
             text-align center
             padding 19px 15px 20px
             text-transform uppercase
+
+            @media (min-width: $breakpoints['md'])
+                width 250px
+
     &__next
         color #212121
         background #e5e5e5
