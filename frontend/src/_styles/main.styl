@@ -135,17 +135,36 @@ init($breakpoints, $columns)
         padding 12px 4px 3px
         border-bottom 3px solid rgba(255, 255, 255, 0)
 
+        &:hover + .ui-menu__sublevel
+            display block
+
     &__link
         &:hover
             color #439fac
             border-bottom 3px solid #439fac
             cursor pointer
 
+    &__item
+        position relative
+
     &__item + &__item
         margin-left 0
 
         @media (min-width: $breakpoints['xl'])
             margin-left 1.9%
+
+    &__sublevel
+        background-color #f3f2e9
+        width auto
+        position absolute
+        z-index 150
+        margin 6px 0
+        padding 22px 17px 26px 25px
+        display none
+
+    &__sublevel-item
+        a
+            display inline-block
 
 .ui-footer-menu
     font-family 'Panton'
@@ -752,6 +771,8 @@ init($breakpoints, $columns)
 
 .ui-catalog-interactives
     background url('../images/catalog-interactives-bg.png') no-repeat 50% 50%
+    width 100%
+    background-size cover
     padding-top 45px
     position relative
 
