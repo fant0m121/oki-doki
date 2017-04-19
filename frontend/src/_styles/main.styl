@@ -5,7 +5,6 @@
 @import '../../node_modules/owl.carousel/dist/assets/owl.theme.default.css';
 
 // Import Modules
-@import '../_modules/link/link';
 @import '_variable';
 @import 'modules/fonts';
 @import 'modules/button';
@@ -128,24 +127,28 @@ init($breakpoints, $columns)
         flex-wrap none
         justify-content space-between
 
-    a
+    &__link
         color #050505
         text-decoration none
         display block
         padding 12px 4px 3px
         border-bottom 3px solid rgba(255, 255, 255, 0)
+        transition border-color .2s ease, color .2s ease
 
-        &:hover + .ui-menu__sublevel
-            display block
-
-    &__link
         &:hover
             color #439fac
-            border-bottom 3px solid #439fac
+            border-color #439fac
             cursor pointer
 
     &__item
         position relative
+
+        &:hover
+            .ui-menu__sublevel
+                visibility visible
+
+            .ui-menu-sublevel
+                max-height 1000px
 
     &__item + &__item
         margin-left 0
@@ -154,17 +157,50 @@ init($breakpoints, $columns)
             margin-left 1.9%
 
     &__sublevel
-        background-color #f3f2e9
         width auto
-        position absolute
+        bottom 0
         z-index 150
-        margin 6px 0
-        padding 22px 17px 26px 25px
-        display none
+        position absolute
+        visibility hidden
+
+        &:hover
+            display block
 
     &__sublevel-item
         a
             display inline-block
+
+.ui-menu-sublevel
+    position absolute
+    border-top 3px solid rgba(255, 255, 255, 0)
+    max-height 0
+    overflow hidden
+    transition max-height .5s ease-in
+
+    &:hover
+        display block
+
+    &__item
+        background-color #f3f2e9
+        color #050505
+        text-decoration none
+        display block
+        padding 0px 15px 3px
+        border-bottom 3px solid rgba(255, 255, 255, 0)
+        transition border-color .2s ease, color .2s ease
+        white-space nowrap
+
+        &:hover
+            color #439fac
+            border-color #439fac
+            cursor pointer
+
+        &:first-child
+            padding-top 10px
+
+        &:last-child
+            padding-bottom 10px
+            border-bottom 0
 
 .ui-footer-menu
     font-family 'Panton'
