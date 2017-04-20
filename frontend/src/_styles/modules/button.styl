@@ -41,8 +41,8 @@
         text-align center
 
         &:hover
-            background-color #fff
-            color $color-darkcoral
+            background-color $color-redbrown
+            border-color $color-redbrown
 
     &--grey
         background #f9f9f9
@@ -148,6 +148,10 @@
         &:before
             background-color $color-darkcoral
 
+        &:hover
+            &:before
+                background-color $color-redbrown
+
     &--grey
         &:before
             background-color $color-ashgrey
@@ -155,6 +159,20 @@
     &--black
         &:before
             background-color $color-smokyblack
+
+    &--isabelline
+        &:before
+            background-color $color-isabelline
+
+        i
+            color $color-darkcoral
+
+        &:hover
+            &:before
+                background-color $color-darkcoral
+
+            i
+                color #fff
 
     &--size-lg
         i
