@@ -1,0 +1,72 @@
+extends ../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+
+block content
+    .ui-prices
+        .grid.grid--container
+            .row
+                .col.col--xl-12
+                    .ui-page__header.ui-heading.ui-heading--lvl2.ui-heading--black цены на перегородки
+            .row
+                .col.col--xl-4
+                    .ui-prices__photo(style="background-image: url('/images/prices.png')")
+                .col.col--xl-4
+                    .ui-text-block
+                        .ui-text-block__title.ui-text-block__title--grey.ui-text-block__title--mini Оптимальные цены на офисные перегородки – одно из главных преимуществ компании «Оки-Доки».
+                        .ui-text-block__text Высокий уровень клиентского сервиса, бесплатное гарантийное обслуживание и высокое качество продукции позволило нам завоевать уважение и доверие многих клиентов.
+                .col.col--xl-4
+                    .ui-text-block
+                        .ui-text-block__title.ui-text-block__title--grey Цена рассчитывается за 1 м2 и зависит от:
+                        .ui-text-block__text.ui-text-block__list  
+                            ul.ui-step-check
+                                li Материала, который используют в качестве заполнения.
+                                li Дополнительных элементов (жалюзи, электромагнитных замков, кабель-каналов и пр.).
+            .row
+                .col.col--xl-12
+                    .ui-page__header.ui-page__header--small.ui-heading.ui-heading--lvl4.ui-heading--black Вид от 1 900 за модуль
+            .row
+                .col.col--xl-12
+                    table.ui-table
+                        thead
+                            tr
+                                th Вид
+                                th Цена (руб/м2)
+                        tbody
+                            tr
+                                td Глухие перегородки
+                                td от 2 200 до 3 000 #[br](высотой до 3-х метров, без угловых элементов)
+                            tr
+                                td Комбинированные перегородки с одинарным стеклом
+                                td от 2 800 до 3 900
+                            tr
+                                td Комбинированные перегородки с двойным стеклом
+                                td от 3 100 до 4 700
+                            tr
+                                td Цельностеклянная перегородка
+                                td от 3 200
+                            tr
+                                td Мобильные перегородки OKI-DOKI
+                                td от 2 400 за модуль
+                            tr 
+                                td Перегородки «Лайт»
+                                td от 1 900 за модуль
+            .row
+                .col.col--xl-12
+                    .ui-text-block
+                        .ui-text-block__title.ui-text-block__title--grey Почему мы можем предлагать выгодные цены
+                        .ui-text-block__text
+                            .ui-text-block__textbold.ui-text-block__textbold--left Профили для производства перегородок поставляются напрямую с завода
+                            .ui-text-block__text-italic Они изготавливаются по заказу на наших собственных матрицах. Партнерские отношения с заводом позволяют нам работать на выгодных условиях, что позволяет нам не завышать цены.
+                            .ui-text-block__textbold.ui-text-block__textbold--left Материалы заполнения поставляются напрямую от производителя
+                            .ui-text-block__text-italic В процессе реализации заказов не участвуют третьи лица. Благодаря отсутствию оптовых посредников стоимость офисных перегородок формируется без наценок.
+                            .ui-text-block__textbold.ui-text-block__textbold--left Расходы при распиле и раскрое материала сведены к минимуму
+                            .ui-text-block__text-italic Это становится возможным благодаря использованию специального программного обеспечения. Правильная экономия материала дает нам возможность не повышать необоснованно цены на перегородки.
+                            .ui-text-block__textbold.ui-text-block__textbold--left Использование собственных производственных мощностей
+                            .ui-text-block__text-italic Мы не обращаемся к услугам сторонних производителей.
+                            .ui-text-block__textbold.ui-text-block__textbold--left Продуманная организация всех бизнес-процессов
+                            .ui-text-block__text-italic Весь процесс от приема заказ до его реализации насчитывает более 20 шагов. Благодаря оптимизации работы и рациональному разделению труда мы смогли сделать производство недорогим без потери качества.
+                            
+                            
