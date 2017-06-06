@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "dependencies": {
     "jquery": "~2.2.0",
+    "magnific-popup": "^1.1.0",
     "normalize.css": "~3.0.3",
     "owl.carousel": "^2.2.0"
   },
@@ -58,10 +59,15 @@
     ]
   },
   "browser": {
-    "owl.carousel": "./node_modules/owl.carousel/dist/owl.carousel.js"
+    "owl.carousel": "./node_modules/owl.carousel/dist/owl.carousel.js",
+    "magnific-popup": "./node_modules/magnific-popup/dist/jquery.magnific-popup.js"
   },
   "browserify-shim": {
     "owl.carousel": {
+      "exports": null,
+      "depends": "jquery:$"
+    },
+    "magnific-popup": {
       "exports": null,
       "depends": "jquery:$"
     }

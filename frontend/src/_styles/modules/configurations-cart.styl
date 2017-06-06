@@ -3,6 +3,7 @@
     border-top 7px solid $color-smokyblack
     display flex
     margin 15px 0
+    flex 1
 
     &__title
         background-repeat no-repeat
@@ -20,6 +21,21 @@
         align-items center
         justify-content center
         font-weight bold
+        position relative
+        
+        &:before
+            position absolute
+            width 100%
+            height 100%
+            left 0
+            top 0
+            content ' '
+            display block
+            background rgba(0, 0, 0, .4)
+        
+        & span
+            z-index 1
+            position relative
 
     &__description
         width 100%

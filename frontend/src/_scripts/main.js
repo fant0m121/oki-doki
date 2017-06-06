@@ -5,7 +5,7 @@
 
 var $ = window.jQuery = require('jquery');
 require('owl.carousel');
-
+require('magnific-popup');
 
 $(function() {
     var owlProject = $('.js-project-carousel');
@@ -297,9 +297,6 @@ $(function() {
 });
 
 $(function() {
-    $('.ui-px-overlay').css({
-        height: document.body.clientHeight
-    });
     $('.js-faq-item').on('click', function() {
         if (!$(this).hasClass('active')) {
             $('.js-faq-item').removeClass('active').next('div').slideUp();
@@ -310,6 +307,32 @@ $(function() {
         else {
             $(this).removeClass('active').next('div').slideUp();
             $(this).find('span').text('+');
+        }
+    });
+});
+
+$(function() {
+    $('.js-gallery').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        closeOnContentClick: false,
+        closeBtnInside: false,
+        mainClass: 'mfp-with-zoom mfp-img-mobile',
+        image: {
+            verticalFit: true
+        },
+        gallery: {
+            enabled: true
+        }
+    });
+
+    $('.js-zoom').magnificPopup({
+        type: 'image',
+        closeOnContentClick: false,
+        closeBtnInside: false,
+        mainClass: 'mfp-with-zoom mfp-img-mobile',
+        image: {
+            verticalFit: true
         }
     });
 });
