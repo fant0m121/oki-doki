@@ -3,6 +3,7 @@
 @import '../../node_modules/animate.css/animate.css';
 @import '../../node_modules/owl.carousel/dist/assets/owl.carousel.css';
 @import '../../node_modules/owl.carousel/dist/assets/owl.theme.default.css';
+@import '../../node_modules/magnific-popup/dist/magnific-popup.css';
 
 // Import Modules
 @import '_variable';
@@ -49,6 +50,9 @@ init($breakpoints, $columns)
   display flex
   flex-direction column
 
+.ui-content
+    position relative
+    
 .ui-text-page
     padding-bottom 35px
 
@@ -230,6 +234,7 @@ init($breakpoints, $columns)
 
 .ui-configuration
     background #fff url('../images/baffle-bg.png') no-repeat 50% 0
+    background-size cover
     padding 47px 0 0
 
     &__header
@@ -264,6 +269,7 @@ init($breakpoints, $columns)
 
 .ui-project-home
     background #fff url('../images/project-home-bg.jpg') no-repeat 50% 0
+    background-size cover
     padding-bottom 30px
 
     &__header
@@ -331,9 +337,11 @@ init($breakpoints, $columns)
     &__no-number
         max-width 70px
 
-.ui-rewiew
-    background linear-gradient(to bottom, #ececec 322px, #fff 322px, #fff 100%)
+.ui-home-review
     color #313131
+    
+    &__container
+        background linear-gradient(to bottom, #ececec 322px, #fff 322px, #fff 100%)
 
     &__header
         padding 24px 0 31px
@@ -343,6 +351,7 @@ init($breakpoints, $columns)
 
 .ui-customer-reviews
     background #fff url('../images/customer-reviews-bg.png') no-repeat 50% 0
+    background-size cover
     padding 40px 0
 
     &__content
@@ -378,7 +387,10 @@ init($breakpoints, $columns)
     font-family 'Rubik'
     font-size 26px
     color #393939
-    padding-bottom 30px
+    
+    &__container
+        background #fff
+        padding-bottom 30px
 
     span
         font-weight bold
@@ -1015,6 +1027,7 @@ init($breakpoints, $columns)
 
     a
         font-weight normal
+        color #d65045
 
 .ui-service
     padding-bottom 40px
